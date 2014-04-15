@@ -6,7 +6,7 @@
  */
 ?>
 
-<section  class="frontpage" <?php echo "data-home-gallery ng-controller=\"HomeCtrl\""; ?>  >
+<section  class="frontpage" <?php echo "data-home-gallery ng-controller=\"MemberListCtrl\""; ?>  >
 
 <a class="frontpage-member" href="http://vbav2/{{member.selector}}" ng-repeat="member in memberList">
     <h4 class="frontpage-member-title" itemprop="member">{{member.name}}</h4>

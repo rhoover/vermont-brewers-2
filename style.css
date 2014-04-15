@@ -78,12 +78,12 @@ html {
   line-height: 1.5em;
 }
 
-.frontpage-member-address, .footer-copyright {
+.frontpage-member-address, .member-sidebar-item, .footer-copyright {
   font-size: 0.75em;
   line-height: 1.5em;
 }
 @media (min-width: 54em) {
-  .frontpage-member-address, .footer-copyright {
+  .frontpage-member-address, .member-sidebar-item, .footer-copyright {
     font-size: 0.75em;
     line-height: 1.5em;
   }
@@ -133,8 +133,12 @@ html {
   }
 }
 
-.mobile-screen-title, .big-screen-title, .nav-menu .menu-item, .hero-banner-header {
+.mobile-screen-title, .big-screen-title, .hero-banner-header {
   font-weight: 700;
+}
+
+.nav-menu .menu-item {
+  font-weight: 300;
 }
 
 @font-face {
@@ -377,6 +381,197 @@ p {
   width: 107px;
 }
 
+.VBA40-sprite, .VBA40-alchemist, .VBA40-backacrebeer, .VBA40-bobcat, .VBA40-coveredbridge, .VBA40-cropbistro, .VBA40-dropin, .VBA40-fiddlehead, .VBA40-foleybrothers, .VBA40-fourteenthstar, .VBA40-gratefulhands, .VBA40-harpoon, .VBA40-hillfarmstead, .VBA40-kingdombrewing, .VBA40-lawsons, .VBA40-longtrail, .VBA40-lostnationbrewing, .VBA40-madison, .VBA40-magichat, .VBA40-mcneills, .VBA40-northshire, .VBA40-norwichinn, .VBA40-ottercreek, .VBA40-perfectpear, .VBA40-rockart, .VBA40-switchback, .VBA40-threeneeds, .VBA40-trappfamily, .VBA40-troutriver, .VBA40-vpb, .VBA40-whetstonestation, .VBA40-zerogravity {
+  background-image: url('images/VBA40-s799e5fbea7.png');
+  background-repeat: no-repeat;
+}
+
+.VBA40-alchemist {
+  background-position: -13px 0;
+  height: 40px;
+  width: 40px;
+}
+
+.VBA40-backacrebeer {
+  background-position: -8px -40px;
+  height: 40px;
+  width: 50px;
+}
+
+.VBA40-bobcat {
+  background-position: -13px -80px;
+  height: 40px;
+  width: 40px;
+}
+
+.VBA40-coveredbridge {
+  background-position: -13px -120px;
+  height: 40px;
+  width: 40px;
+}
+
+.VBA40-cropbistro {
+  background-position: 0 -160px;
+  height: 40px;
+  width: 65px;
+}
+
+.VBA40-dropin {
+  background-position: -12px -200px;
+  height: 40px;
+  width: 42px;
+}
+
+.VBA40-fiddlehead {
+  background-position: -13px -240px;
+  height: 38px;
+  width: 40px;
+}
+
+.VBA40-foleybrothers {
+  background-position: -13px -278px;
+  height: 40px;
+  width: 40px;
+}
+
+.VBA40-fourteenthstar {
+  background-position: -8px -318px;
+  height: 40px;
+  width: 50px;
+}
+
+.VBA40-gratefulhands {
+  background-position: -13px -358px;
+  height: 40px;
+  width: 40px;
+}
+
+.VBA40-harpoon {
+  background-position: -13px -398px;
+  height: 40px;
+  width: 40px;
+}
+
+.VBA40-hillfarmstead {
+  background-position: -11px -438px;
+  height: 40px;
+  width: 43px;
+}
+
+.VBA40-kingdombrewing {
+  background-position: -12px -478px;
+  height: 40px;
+  width: 42px;
+}
+
+.VBA40-lawsons {
+  background-position: 0 -518px;
+  height: 40px;
+  width: 66px;
+}
+
+.VBA40-longtrail {
+  background-position: -3px -558px;
+  height: 40px;
+  width: 59px;
+}
+
+.VBA40-lostnationbrewing {
+  background-position: -13px -598px;
+  height: 46px;
+  width: 40px;
+}
+
+.VBA40-madison {
+  background-position: -13px -644px;
+  height: 40px;
+  width: 40px;
+}
+
+.VBA40-magichat {
+  background-position: -6px -684px;
+  height: 40px;
+  width: 54px;
+}
+
+.VBA40-mcneills {
+  background-position: -13px -724px;
+  height: 53px;
+  width: 40px;
+}
+
+.VBA40-northshire {
+  background-position: -9px -777px;
+  height: 40px;
+  width: 48px;
+}
+
+.VBA40-norwichinn {
+  background-position: -10px -817px;
+  height: 40px;
+  width: 45px;
+}
+
+.VBA40-ottercreek {
+  background-position: -13px -857px;
+  height: 40px;
+  width: 39px;
+}
+
+.VBA40-perfectpear {
+  background-position: -5px -897px;
+  height: 40px;
+  width: 56px;
+}
+
+.VBA40-rockart {
+  background-position: -16px -937px;
+  height: 40px;
+  width: 34px;
+}
+
+.VBA40-switchback {
+  background-position: -10px -977px;
+  height: 40px;
+  width: 45px;
+}
+
+.VBA40-threeneeds {
+  background-position: -13px -1017px;
+  height: 40px;
+  width: 40px;
+}
+
+.VBA40-trappfamily {
+  background-position: -10px -1057px;
+  height: 40px;
+  width: 45px;
+}
+
+.VBA40-troutriver {
+  background-position: -15px -1097px;
+  height: 40px;
+  width: 35px;
+}
+
+.VBA40-vpb {
+  background-position: -8px -1137px;
+  height: 40px;
+  width: 50px;
+}
+
+.VBA40-whetstonestation {
+  background-position: -13px -1177px;
+  height: 40px;
+  width: 40px;
+}
+
+.VBA40-zerogravity {
+  background-position: -11px -1217px;
+  height: 40px;
+  width: 43px;
+}
+
 .social-sprite, .social-facebook, .social-google, .social-twitter {
   background-image: url('images/social-sc39d6e2435.png');
   background-repeat: no-repeat;
@@ -584,7 +779,7 @@ p {
   }
 }
 .nav-menu .current-menu-item {
-  color: #cec09a;
+  color: #f8f5f0;
 }
 
 .hero-banner {
@@ -709,6 +904,10 @@ p {
   .content {
     top: 33em;
   }
+}
+
+.inner-content {
+  padding-top: 1.5em;
 }
 
 .frontpage, .lede {
@@ -841,6 +1040,112 @@ p {
 
 .frontpage-member-logo {
   margin: 1em auto 0 auto;
+}
+
+.member-sidebar {
+  position: relative;
+  font-family: "Fabrica", helvitica, arial, sans-serif;
+  display: none;
+}
+@media (min-width: 54em) {
+  .member-sidebar {
+    display: block;
+    width: 31.25%;
+    float: left;
+    padding-left: 0.7230015%;
+    padding-right: 0.7230015%;
+    margin-left: 6.25%;
+    margin-right: 0%;
+  }
+}
+@media (min-width: 75em) {
+  .member-sidebar {
+    width: 20.8333333%;
+    float: left;
+    padding-left: 0.482001%;
+    padding-right: 0.482001%;
+    margin-left: 8.3333333%;
+    margin-right: 0%;
+  }
+}
+
+@media (min-width: 54em) {
+  .member-sidebar-item {
+    width: 100%;
+    float: left;
+    padding-left: 2.3136049%;
+    padding-right: 2.3136049%;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  }
+  .member-sidebar-item:hover {
+    background: rgba(0, 72, 17, 0.05);
+  }
+  .member-sidebar-item:active {
+    background: rgba(0, 72, 17, 0.05);
+  }
+  .member-sidebar-item:focus {
+    background: rgba(0, 72, 17, 0.05);
+  }
+  .member-sidebar-item:last-of-type {
+    margin-bottom: 1.5em;
+  }
+}
+
+@media (min-width: 54em) {
+  .member-sidebar-image {
+    width: 20%;
+    float: left;
+    padding-left: 2.3136049%;
+    padding-right: 2.3136049%;
+  }
+}
+
+@media (min-width: 54em) {
+  .member-sidebar-name {
+    padding-top: 0.75em;
+    padding-left: 31.25%;
+  }
+}
+@media (min-width: 75em) {
+  .member-sidebar-name {
+    width: 80%;
+    float: left;
+    padding-left: 2.3136049%;
+    padding-right: 2.3136049%;
+  }
+}
+
+.innerpage {
+  position: relative;
+  width: 83.3333333%;
+  float: left;
+  padding-left: 0.964002%;
+  padding-right: 0.964002%;
+  margin-left: 8.3333333%;
+  margin-right: 8.3333333%;
+}
+@media (min-width: 54em) {
+  .innerpage {
+    width: 56.25%;
+    float: right;
+    padding-left: 0.7230015%;
+    padding-right: 0.7230015%;
+    margin-left: 0%;
+    margin-right: 6.25%;
+  }
+}
+@media (min-width: 75em) {
+  .innerpage {
+    width: 62.5%;
+    float: left;
+    padding-left: 0.482001%;
+    padding-right: 0.482001%;
+    margin-left: 0%;
+    margin-right: 8.3333333%;
+  }
 }
 
 .footer {

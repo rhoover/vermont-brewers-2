@@ -103,4 +103,10 @@
         <p class="hero-banner-text">Maybe there's something in the water. Maybe there's something in the air.<br />Maybe..... there's something up here in the mountains.<br />Vermont's brewers are making magic with it.</p>
     </div><!-- end .hero-banner -->
 
-<main class="content">
+    <main
+        <?php if (is_front_page()) { ?>
+            <?php echo "class=\"content\" "; ?>
+        <?php } else { ?>
+            <?php echo "class=\"content inner-content\" "; ?>
+        <?php } ?>
+    >

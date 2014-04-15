@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('vbaV2App')
-    .controller('HomeCtrl', ['$scope', 'memberjson', 'storageService', function ($scope, memberjson, storageService) {
+    .controller('MemberListCtrl', ['$scope', 'memberjson', 'storageService', function ($scope, memberjson, storageService) {
 
         $scope.$emit('LOADING');
 

@@ -11,11 +11,11 @@ Template Name: Member Page
 
 <?php while ( have_posts() ) : the_post(); ?>
 
-    <?php get_template_part('memberlist'); ?>
+    <?php get_template_part('membersidebar'); ?>
 
     <section
         <?php $inner_value = get_post_meta($post->ID, 'member-class', true); ?>
-        <?php post_class('innerpage '); ?>
+        <?php echo "class=\"innerpage\"  "; ?>
         <?php echo "ng-controller=\"MemberCtrl\"  data-$inner_value"; ?>
     >
 

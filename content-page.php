@@ -7,7 +7,7 @@
 ?>
 
 <?php if ( !is_front_page() ) :?>
-    <?php get_template_part('memberlist'); ?>
+    <?php get_template_part('membersidebar'); ?>
     <?php get_template_part('innerpage'); ?>
 <?php endif;?>
 

@@ -15,7 +15,7 @@
         text-decoration: none;
         color: $yellow;
         @extend %base-font;
-        @extend %weight-strong;
+        @extend %weight-light;
         @include susy-breakpoint($bp-large, $columns-large) {
             margin-left: gutter();
             &:hover {
@@ -24,6 +24,6 @@
         }
     }
     .current-menu-item {
-        color: lighten($yellow, 10%);
+        color: $white;
     }
 }

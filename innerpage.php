@@ -6,7 +6,7 @@
  */
 ?>
 
-<article <?php post_class('innerpage'); ?> >
+<article class="innerpage" >
     <h3 class="post-title">
         <?php the_title(); ?>
     </h3>
