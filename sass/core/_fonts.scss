@@ -1,0 +1,13 @@
+@include font-face('Fabrica', font-files(
+    'fabrica-webfont.woff',woff,
+    'fabrica-webfont.ttf', ttf,
+    'fabrica-webfont.svg', svg),
+    'fabrica-webfont.eot');
+    $Fabrica: 'Fabrica', helvitica, arial, sans-serif;
+
+    @include font-face('MerriweatherLight', font-files(
+    'Merriweather-Light-webfont.woff',woff,
+    'Merriweather-Light-webfont.ttf', ttf,
+    'Merriweather-Light-webfont.svg', svg),
+    'Merriweather-Light-webfont.eot');
+    $MerriweatherLight: 'MerriweatherLight', garamond, serif;

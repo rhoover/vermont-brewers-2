@@ -1,0 +1,17 @@
+$yellow: rgb(190,170,119);
+$yellow-lite: lighten($yellow, 7%);
+
+$green: rgb(0,72,17);
+// $darkgreen: rgb(0,47,10);
+$darkgreen: darken($green, 33%);
+$lightgreen: lighten($green, 11%);
+$bannergreen: rgb(116,140,77);
+$bannergreen-top:darken($bannergreen, 5%);
+$bannergreen-bottom:darken($bannergreen, 20%);
+
+$red: rgb(95,9,0);
+$black: rgb(55,55,55);
+$white: lighten($yellow, 35%);
+$experimental-support-for-svg: true;
+
+$banner-gradient: linear-gradient(top, rgba($bannergreen-top, .85) 0%, rgba($bannergreen-bottom, .85) 100%);

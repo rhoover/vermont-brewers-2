@@ -1,0 +1,73 @@
+.hero-banner {
+    @extend %responsive-trigger;
+    width: 100%;
+    position: fixed;
+    top: rhythm(1.5, 16px);
+    @include susy-breakpoint($bp-medium, $columns-medium) {
+        top: rhythm(2, 16px);
+    }
+    @include susy-breakpoint($bp-large, $columns-large) {
+        top: rhythm(3, 16px);
+    }
+}
+
+.bg-phone {
+    background: url('images/hero_road_small.jpg') no-repeat left top;
+    background-size: 100%;
+    height: image-height('images/hero_road_small.jpg');
+}
+.bg-tablet {
+    background: url('images/hero_road_medium.jpg') no-repeat left top;
+    background-size: 100%;
+    height: image-height('images/hero_road_medium.jpg');
+}
+.bg-computer {
+    background: url('images/hero_road_large.jpg') no-repeat left top;
+    background-size: 100%;
+    height: image-height('images/hero_road_large.jpg');
+}
+
+.hero-banner-header {
+    width: 100%;
+    @extend %xlarge-font;
+    @extend %weight-strong;
+    @include rhythm(1.5,0,0,1,21px);
+    text-align: center;
+    border-top: .01em solid rgba($black, .75);
+    border-bottom: .01em solid rgba($black, .75);
+    background-color: rgba($black, .35);
+    @include susy-breakpoint($bp-medium, $columns-medium) {
+        @include adjust-font-size-to(80px);
+        @include rhythm(1,0,0,1,80px);
+    }
+    @include susy-breakpoint($bp-large, $columns-large) {
+        @include adjust-font-size-to(120px);
+        @include rhythm(5,0,0,1,120px);
+    }
+}
+.hero-banner-yellow {
+    color: rgba($white, .8);
+    @include susy-breakpoint($bp-medium, $columns-medium) {
+        color: $yellow;
+        text-shadow: rgba($black,0.9) 0 0 0.02em;
+    }
+}
+.hero-banner-green {
+    color: rgba($white, .8);
+    @include susy-breakpoint($bp-medium, $columns-medium) {
+        color: darken($green, 2%);
+        text-shadow: rgba($white,0.3) 0 0 0.02em;
+    }
+}
+.hero-banner-text {
+    display: none;
+    width: 100%;
+    font-family: $Fabrica;
+    color: $white;
+    text-align: center;
+    @extend %medium-font;
+    @include susy-breakpoint($bp-medium, $columns-medium) {
+        display: inline-block;
+        @include rhythm(0,0,0,2,16px);
+    }
+}

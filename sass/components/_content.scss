@@ -1,0 +1,21 @@
+.content {
+    top: rhythm(5, 16px);;
+    position: relative;
+    background: $white;
+    //Inspired by: http://stackoverflow.com/questions/22560628/add-a-hatch-pattern-over-a-linear-gradient-in-a-div
+    //A CSS cross-hatch pattern
+    background-image:
+        linear-gradient(45deg, rgba($yellow, .05) 25%, transparent 25%, transparent 75%, rgba($yellow, .05)  75%, rgba($yellow, .05)),
+        linear-gradient(45deg, rgba($yellow, .05) 25%, transparent 25%, transparent 75%, rgba($yellow, .05) 75%, rgba($yellow, .05));
+    background-size: .4em .4em, .4em .4em;
+    background-position: 0px 0px, .3em .3em;
+    // End pattern
+    width: 100%;
+    z-index: 5;
+    @include susy-breakpoint($bp-medium,$columns-medium) {
+        top: 16em;
+    }
+    @include susy-breakpoint($bp-large,$columns-large) {
+        top: 33em;
+    }
+}

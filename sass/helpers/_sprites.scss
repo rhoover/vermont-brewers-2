@@ -1,0 +1,9 @@
+$VBA100-sprite-dimensions: true;
+$VBA100-position: 50%;
+@import "VBA100/*.png";
+@include all-VBA100-sprites;
+
+$social-sprite-dimensions: true;
+$social-position: 50%;
+@import "social/*.png";
+@include all-social-sprites;

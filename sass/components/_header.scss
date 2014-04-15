@@ -1,0 +1,90 @@
+.header {
+    position: fixed;
+    top: 0px;
+    @include span(12);
+    z-index: 10;
+    background-color: #EEEEEE;
+    @include background-image($banner-gradient);
+    border-top: .1em solid $yellow;
+    border-bottom: .1em solid $darkgreen;
+    @include box-shadow(0 .25em .25em rgba(black, 0.4));
+    @include susy-breakpoint($bp-medium, $columns-medium) {
+        @include span(16);
+    }
+    @include susy-breakpoint($bp-large, $columns-large) {
+        @include span(24);
+        border-top: .2em solid $yellow;
+    }
+}
+
+.mobile-screen-title {
+    @include span(6);
+    margin: .75em 0px;
+    padding: 0px;
+    @extend %medium-font;
+    @extend %weight-strong;
+    text-align: center;
+    font-family: $Fabrica;
+    a {
+        text-decoration: none;
+        color: lighten($yellow, 7%);
+    }
+    @include breakpoint($bp-medium) {
+        display: none;
+    }
+}
+
+.big-screen-title {
+    display: none;
+    font-family: $Fabrica;
+    @extend %large-font;
+    @extend %weight-strong;
+    @include susy-breakpoint($bp-medium,$columns-medium) {
+        display: inline-block;
+        @include span(8);
+        @include rhythm(.25,0,0,.25,16px);
+        text-align: center;
+        a {
+            text-decoration: none;
+            color: $yellow-lite;
+            &:hover {
+                color: lighten($yellow, 25%);
+                text-shadow: $black -.02em 0;
+            }
+        }
+    }
+    @include susy-breakpoint($bp-large,$columns-large) {
+        @include span(9);
+        @include rhythm(.5,0,0,.5,16px);
+        text-align: left;
+        &:before {
+            content: "";
+            display: block;
+            float: left;
+            width: image-width("images/vba-logo-final-web.png");
+            height: image-height("images/vba-logo-final-web.png");
+            margin-right: span(1);
+            margin-top: rhythm(.25,16px);
+            background: url("images/vba-logo-final-web.png") no-repeat;
+        }
+    }
+}
+
+.mobile-back-button {
+    @include span(3);
+    @include rhythm(.5,0,0,.5,16px);
+    padding: 0;
+    font-family: $Fabrica;
+    text-align: center;
+    color: rgba($white, .5);
+    text-decoration: underline;
+    @include breakpoint($bp-medium) {
+        @include rhythm(.75,0,0,.75,16px);
+    }
+    @include breakpoint($bp-large) {
+        display: none;
+    }
+}
+.mobile-menu-button {
+    @extend .mobile-back-button;
+}

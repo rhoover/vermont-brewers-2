@@ -1,0 +1,8 @@
+{
+  "name": "vbaV2",
+  "version": "2.0.0",
+  "dependencies": {
+    "angular": "~1.2.16",
+    "angular-animate": "~1.2.16"
+  }
+}

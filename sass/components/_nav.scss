@@ -1,0 +1,29 @@
+.nav-menu {
+    width: 100%;
+    @include susy-breakpoint($bp-large, $columns-large) {
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        @include rhythm(1.5,0,.5,0,16px);
+        padding-right: gutter()*2;
+        text-align: right;
+        z-index: 20;
+    }
+
+    .menu-item {
+        font-family: $Fabrica;
+        text-decoration: none;
+        color: $yellow;
+        @extend %base-font;
+        @extend %weight-strong;
+        @include susy-breakpoint($bp-large, $columns-large) {
+            margin-left: gutter();
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    .current-menu-item {
+        color: lighten($yellow, 10%);
+    }
+}

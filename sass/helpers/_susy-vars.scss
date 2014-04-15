@@ -1,0 +1,9 @@
+// @include global-box-sizing(border-box);
+@include border-box-sizing;
+$columns-small: layout(12);
+$columns-medium: layout(16);
+$columns-large: layout(24);
+
+$gallery-small: layout(12 split);
+$gallery-medium: layout(16 before);
+$gallery-large: layout(24 before);

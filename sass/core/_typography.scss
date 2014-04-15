@@ -1,0 +1,94 @@
+$tiny-font-size: 9px;
+$tiny-font-leading: 0.563;
+
+$small-font-size: 12px;
+$small-font-leading: 0.75;
+
+$base-font-size: 16px;
+$base-font-leading: 1;
+
+$medium-font-size: 21px;
+$medium-font-leading: 1.333;
+
+$large-font-size: 28px;
+$large-font-leading: 1.777;
+
+$xlarge-font-size: 38px;
+$xlarge-font-leading: 2.369;
+
+$base-line-height: 24px;
+
+$relative-font-sizing: true;
+$round-to-nearest-half-line: true;
+@include establish-baseline;
+
+@mixin typeSize($size) {
+    @if $size == "tiny" {
+        @include adjust-font-size-to($tiny-font-size, $tiny-font-leading);
+    }
+    @if $size == "small" {
+        @include adjust-font-size-to($small-font-size, $small-font-leading);
+        @include breakpoint($bp-medium) {
+            @include adjust-font-size-to($small-font-size, $small-font-leading);
+        }
+    }
+    @if $size == "base" {
+        @include adjust-font-size-to($base-font-size, $base-font-leading);
+        @include breakpoint($bp-medium) {
+            @include adjust-font-size-to($base-font-size, $base-font-leading);
+        }
+    }
+    @if $size == "medium" {
+        @include adjust-font-size-to($base-font-size, $base-font-leading);
+        @include breakpoint($bp-medium) {
+            @include adjust-font-size-to($medium-font-size, $medium-font-leading);
+        }
+    }
+    @if $size == "large" {
+        @include adjust-font-size-to($medium-font-size, $medium-font-leading);
+        @include breakpoint($bp-medium) {
+            @include adjust-font-size-to($large-font-size, $large-font-leading);
+        }
+    }
+    @if $size == "xlarge" {
+        @include adjust-font-size-to($large-font-size, $large-font-leading);
+        @include breakpoint($bp-medium) {
+            @include adjust-font-size-to($xlarge-font-size, $xlarge-font-leading);
+        }
+    }
+}
+
+%tiny-font {
+ @include typeSize(tiny);
+}
+%small-font {
+ @include typeSize(small);
+}
+%base-font {
+ @include typeSize(base);
+}
+%medium-font {
+ @include typeSize(medium);
+}
+%large-font {
+ @include typeSize(large);
+}
+%xlarge-font {
+ @include typeSize(xlarge);
+}
+
+%weight-ultrastrong {
+ font-weight: 900;
+}
+%weight-strong {
+ font-weight: 700;
+}
+%weight-regular {
+ font-weight: 400;
+}
+%weight-light {
+ font-weight: 300;
+}
+%weight-ultralight {
+ font-weight: 200;
+}
