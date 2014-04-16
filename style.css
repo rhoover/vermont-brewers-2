@@ -190,6 +190,39 @@ p {
   }
 }
 
+.innerpage, .memberpage {
+  position: relative;
+  width: 83.3333333%;
+  float: left;
+  padding-left: 0.964002%;
+  padding-right: 0.964002%;
+  margin-left: 8.3333333%;
+  margin-right: 8.3333333%;
+}
+@media (min-width: 54em) {
+  .innerpage, .memberpage {
+    width: 56.25%;
+    float: right;
+    padding-left: 0.7230015%;
+    padding-right: 0.7230015%;
+    margin-left: 0%;
+    margin-right: 6.25%;
+  }
+}
+@media (min-width: 75em) {
+  .innerpage, .memberpage {
+    width: 62.5%;
+    float: left;
+    padding-left: 0.482001%;
+    padding-right: 0.482001%;
+    margin-left: 0%;
+    margin-right: 8.3333333%;
+  }
+}
+.innerpage .post-title, .memberpage .post-title {
+  margin-bottom: 1.5em;
+}
+
 .VBA100-sprite, .VBA100-alchemist, .VBA100-backacrebeer, .VBA100-bobcat, .VBA100-coveredbridge, .VBA100-cropbistro, .VBA100-dropin, .VBA100-fiddlehead, .VBA100-foleybrothers, .VBA100-fourteenthstar, .VBA100-gratefulhands, .VBA100-harpoon, .VBA100-hillfarmstead, .VBA100-kingdombrewing, .VBA100-lawsons, .VBA100-longtrail, .VBA100-lostnationbrewing, .VBA100-madison, .VBA100-magichat, .VBA100-mcneills, .VBA100-northshire, .VBA100-norwichinn, .VBA100-ottercreek, .VBA100-perfectpear, .VBA100-rockart, .VBA100-switchback, .VBA100-threeneeds, .VBA100-trappfamily, .VBA100-troutriver, .VBA100-vpb, .VBA100-whetstonestation, .VBA100-zerogravity {
   background-image: url('images/VBA100-s11f354ca64.png');
   background-repeat: no-repeat;
@@ -1115,36 +1148,6 @@ p {
     float: left;
     padding-left: 2.3136049%;
     padding-right: 2.3136049%;
-  }
-}
-
-.innerpage {
-  position: relative;
-  width: 83.3333333%;
-  float: left;
-  padding-left: 0.964002%;
-  padding-right: 0.964002%;
-  margin-left: 8.3333333%;
-  margin-right: 8.3333333%;
-}
-@media (min-width: 54em) {
-  .innerpage {
-    width: 56.25%;
-    float: right;
-    padding-left: 0.7230015%;
-    padding-right: 0.7230015%;
-    margin-left: 0%;
-    margin-right: 6.25%;
-  }
-}
-@media (min-width: 75em) {
-  .innerpage {
-    width: 62.5%;
-    float: left;
-    padding-left: 0.482001%;
-    padding-right: 0.482001%;
-    margin-left: 0%;
-    margin-right: 8.3333333%;
   }
 }
 

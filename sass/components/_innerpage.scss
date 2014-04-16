@@ -1,13 +1,3 @@
 .innerpage {
-    position: relative;
-    @include span(10);
-    @include squish(1,1);
-    @include susy-breakpoint($bp-medium,$columns-medium) {
-        @include span(last 9); //of 14
-        @include squish(0,1);
-    }
-    @include susy-breakpoint($bp-large,$columns-large) {
-        @include span(15); //of 20
-        @include squish(0,2);
-    }
+    @extend %innerpage;
 }

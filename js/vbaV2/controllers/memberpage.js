@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('vbaV2App')
-    .controller('MemberCtrl', ['$scope', 'memberjson', 'storageService', function ($scope, memberjson, storageService) {
+    .controller('MemberPageCtrl', ['$scope', '$attrs', 'memberjson', 'storageService', 'memberdataFilter', function ($scope, $attrs, memberjson, storageService, memberdataFilter) {
 
         $scope.$emit('LOADING');
 
@@ -10,7 +10,8 @@ angular.module('vbaV2App')
 
         //if we have...
         if (membershipCache != null) {
-            $scope.memberpage = membershipCache;
+            var memberName = $attrs.member;
+            $scope.member = memberdataFilter.member(membershipCache, memberName);
 
             $scope.$emit('LOADED');
         } else {
@@ -19,12 +20,13 @@ angular.module('vbaV2App')
 
             //below pattern is for a service that returns a promise
             memberjson.getMemberData().then(function (data) {
-                $scope.memberList = data;
+
+                var memberName = $attrs.member;
+                $scope.member = memberdataFilter.member(membershipCache, memberName);
 
                 $scope.$emit('LOADED');
 
-                var saveMe = data;
-                storageService.save('vba-membership-cache', saveMe);
+                storageService.save('vba-membership-cache', data);
 
             });
         }; //end if-else

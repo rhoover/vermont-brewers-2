@@ -6,7 +6,6 @@
 
 angular.module('vbaV2App')
     .factory('storageService', [function () {
-        // Service logic
 
         // Public API here
         return {
@@ -18,12 +17,12 @@ angular.module('vbaV2App')
             save: function (key, data) {
                 var storeMe = angular.toJson(data);
                 sessionStorage.setItem(key, storeMe);
-            },
-            remove: function (key) {
-                sessionStorage.removeItem(key);
-            },
-            clearAll: function () {
-                sessionStorage.clear();
             }
+            // remove: function (key) {
+            //     sessionStorage.removeItem(key);
+            // },
+            // clearAll: function () {
+            //     sessionStorage.clear();
+            // }
         };
     }]);

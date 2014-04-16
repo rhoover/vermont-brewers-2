@@ -23,8 +23,7 @@ angular.module('vbaV2App')
 
                 $scope.$emit('LOADED');
 
-                var saveMe = data;
-                storageService.save('vba-membership-cache', saveMe);
+                storageService.save('vba-membership-cache', data);
 
             });
         }; //end if-else
