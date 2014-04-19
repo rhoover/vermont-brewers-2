@@ -1,17 +1,78 @@
 .memberpage {
     @extend %innerpage;
+    &-map {
+        @include susy-breakpoint($bp-large,$columns-large) {
+            @include span(6 of 14 last);
+            clear: right;
+            padding: 0;
+            min-height: 600px;
+            background-color: rgba($green, .25);
+            border: .1em solid $lightgreen;
+        }
+    }
+    &-about {
+        @include susy-breakpoint($bp-large,$columns-large) {
+            @include span(8 of 14);
+            padding-left: 0;
+            padding-top: rhythm(1, 16px);
+            padding-right: gutter(3);
+            min-height: 600px;
+        }
+    }
 }
 
-.member-info {}
+.member-info {
+    @include susy-breakpoint($bp-large,$columns-large) {
+        @include span(5 of 14);
+        padding-left: 0;
+    }
+    &-logo {
+        @include susy-breakpoint($bp-large,$columns-large) {
+            float: left;
+        }
+    }
+    &-address {
+        @extend %member-details;
+    }
+    &-phone {
+        @extend %member-details;
+        @include susy-breakpoint($bp-large,$columns-large) {
+            cursor: default;
+        }
+    }
+    &-link {
+        @extend %member-details;
+        color: $lightgreen;
+        @include susy-breakpoint($bp-large,$columns-large) {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    &-social {
+        @extend %member-details;
+    }
+}
 
-.member-info-address {}
+.member-social {
+    display: inline-block;
+    float: right;
+    opacity: .5;
+    border: .1em solid transparent;
+    border-radius: .25em;
+    @include transition(background-color 0.3s ease-in, border 0.3s ease-in);
+    &:hover {
+        background-color: rgba($black, .2);
+        border: .1em solid rgba($black,.4);
+    }
+}
 
-.member-info-phone {}
+.openmap {
+    @include susy-breakpoint($bp-large,$columns-large){
+        display: none;
+    }
+}
 
-.member-info-link {}
-
-.member-info-social {}
-
-.member-map {}
-
-.member-about {}
+.no-show {
+    display: none;
+}

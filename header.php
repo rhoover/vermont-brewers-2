@@ -98,9 +98,9 @@
         echo str_replace( $find, $replace, $cleanermenu );
     ?><!-- end .nav-menu -->
 
-    <div class="hero-banner" data-banner-image>
-        <h2 class="hero-banner-header"><span class="hero-banner-yellow">small state.</span><span class="hero-banner-green"> BIG BEER.</span></h2>
-        <p class="hero-banner-text">Maybe there's something in the water. Maybe there's something in the air.<br />Maybe..... there's something up here in the mountains.<br />Vermont's brewers are making magic with it.</p>
+    <div class="herobanner" data-banner-image>
+        <h2 class="herobanner-header"><span class="herobanner-yellow">small state.</span><span class="herobanner-green"> BIG BEER.</span></h2>
+        <p class="herobanner-text">Maybe there's something in the water. Maybe there's something in the air.<br />Maybe..... there's something up here in the mountains.<br />Vermont's brewers are making magic with it.</p>
     </div><!-- end .hero-banner -->
 
     <main

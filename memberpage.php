@@ -13,9 +13,8 @@ Template Name: Member Page
 
     <?php get_template_part('membersidebar'); ?>
 
-    <section
+    <section class="memberpage"
         <?php $inner_value = get_post_meta($post->ID, 'member-class', true); ?>
-        <?php echo "class=\"memberpage\"  "; ?>
         <?php echo "ng-controller=\"MemberPageCtrl\"  data-member=\"$inner_value\" "; ?>
     >
 
@@ -23,23 +22,23 @@ Template Name: Member Page
             <?php the_title(); ?>
         </h3>
 
+        <img class="member-info-logo" ng-src="http://vbav2/wp-content/themes/vbav2/images/VBA100/{{member.selector}}.png"  alt="{{member.name}} Logo"  />
         <div class="member-info">
-                <img class="member-info-logo" ng-src="http://vbav2/wp-content/themes/vbav2/images/VBA200/{{member.selector}}.png"  alt="{{member.name}} Logo"  />
-                <p class="member-info-address">{{member.address}}</p>
-                <p class="member-info-address">{{member.city}}, {{member.state}}  {{zip}}</p>
-                <a href="tel:{{member.phone}}" class="member-info-phone">{{member.phone}}</a>
-                <a href="{{member.url}}" target="_blank" class="member-info-link">{{member.name}}</a>
-                <p class="openmap">Open Map</p>
-                <div class="member-info-social">
-                    <a href="{{member.facebook}}" target="_blank" class="social-facebook">{{member.name}}</a>
-                    <a href="{{member.twitter}}" target="_blank" class="social-twitter">{{member.name}}</a>
-                    <a href="{{member.googleplus}}" target="_blank" class="social-google">{{member.name}}</a>
-                </div>
+            <p class="member-info-address">{{member.address}}</p>
+            <p class="member-info-address">{{member.city}}, {{member.state}}  {{zip}}</p>
+            <a href="tel:{{member.phone}}" class="member-info-phone">{{member.phone}}</a>
+            <a href="{{member.url}}" target="_blank" class="member-info-link">{{member.name}}</a>
+            <p class="openmap">Open Map</p>
+            <div class="member-info-social">
+                <a href="{{member.facebook}}" data-show-social target="_blank"><span class="member-social social-facebook"></span></a>
+                <a href="{{member.twitter}}" data-show-social target="_blank"><span class="member-social social-twitter"></span></a>
+                <a href="{{member.googleplus}}" data-show-social target="_blank"><span class="member-social social-google"></span></a>
+            </div>
         </div>
 
-        <div class="member-map"></div>
+        <div class="memberpage-map" data-memberpage-map></div>
 
-        <div class="member-about"><?php the_content(); ?></div>
+        <div class="memberpage-about"><?php the_content(); ?></div>
 
     </section> <!-- end .innerpage -->
 

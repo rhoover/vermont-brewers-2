@@ -10,7 +10,51 @@
         @include span(20);
         @include squish(2,2);
     }
+    &-member {
+        @include span(12);
+        padding: 0;
+        margin-bottom: 1em;
+        min-height: 15em;
+        text-align: center;
+        text-decoration: none;
+        border-radius: .75em;
+        border: .1em solid rgba($green, .25);
+        background-color: rgba(255,255,255,.45);
+        &:hover {
+            border: .1em solid rgba($green, 1);
+            cursor: pointer;
+        }
+        &:focus {
+            outline: none;
+            background: rgba($black, .02);
+            border: .1em solid rgba($green, 1);
+        }
+        &:active {
+            outline: none;
+            background: rgba($black, .02);
+            border: .1em solid rgba($green, 1);
+        }
+        @include susy-breakpoint($bp-medium,$gallery-medium) {
+            @include gallery(7 of 14);
+        }
+        @include susy-breakpoint($bp-large,$gallery-large) {
+            @include gallery(4 of 20);
+        }
+        &-title {
+            padding: .5em 0 .5em 0;
+            border-bottom: .1em solid rgba($green, .25);
+            color: $black;
+        }
+        &-address {
+            padding-top: .75em;
+            @extend %small-font;
+        }
+        &-logo {
+            margin: 1em auto 0 auto;
+        }
+    }
 }
+
 .lede {
     @extend .frontpage;
     padding: 1em 0 1em 0;
@@ -18,51 +62,4 @@
     @include susy-breakpoint($bp-medium,$columns-medium) {
         padding: 2em 0 2em 0;
     }
-}
-
-.frontpage-member {
-    @include span(12);
-    padding: 0;
-    margin-bottom: 1em;
-    min-height: 15em;
-    text-align: center;
-    border-radius: .75em;
-    border: .1em solid rgba($green, .25);
-    background-color: rgba(255,255,255,.45);
-    text-decoration: none;
-    &:hover {
-        border: .1em solid rgba($green, 1);
-        cursor: pointer;
-    }
-    &:focus {
-        outline: none;
-        background: rgba($black, .02);
-        border: .1em solid rgba($green, 1);
-    }
-    &:active {
-        outline: none;
-        background: rgba($black, .02);
-        border: .1em solid rgba($green, 1);
-    }
-    @include susy-breakpoint($bp-medium,$gallery-medium) {
-        @include gallery(7 of 14);
-    }
-    @include susy-breakpoint($bp-large,$gallery-large) {
-        @include gallery(4 of 20);
-    }
-}
-
-.frontpage-member-title {
-    padding: .5em 0 .5em 0;
-    border-bottom: .1em solid rgba($green, .25);
-    color: $black;
-}
-
-.frontpage-member-address {
-    padding-top: .75em;
-    @extend %small-font;
-}
-
-.frontpage-member-logo {
-    margin: 1em auto 0 auto;
 }

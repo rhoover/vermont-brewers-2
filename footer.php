@@ -23,6 +23,11 @@
 
     </main>
 
+    <!-- Grab Google Maps API If Not FrontPage -->
+    <?php if ( !is_front_page() ) :?>
+        <script src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
+    <?php endif;?>
+
     <script src="/wp-content/themes/vbav2/js/libraries/angular/angular.js"></script>
     <script src="/wp-content/themes/vbav2/js/libraries/angular-animate/angular-animate.js"></script>
     <script src="/wp-content/themes/vbav2/js/vbaV2/app.js"></script>
@@ -32,6 +37,8 @@
     <script src="/wp-content/themes/vbav2/js/vbaV2/controllers/memberlist.js"></script>
     <script src="/wp-content/themes/vbav2/js/vbaV2/controllers/memberpage.js"></script>
     <script src="/wp-content/themes/vbav2/js/vbaV2/directives/bannerimage.js"></script>
+    <script src="/wp-content/themes/vbav2/js/vbaV2/directives/showsocial.js"></script>
+    <script src="/wp-content/themes/vbav2/js/vbaV2/directives/membermap.js"></script>
 
 
 </body>
