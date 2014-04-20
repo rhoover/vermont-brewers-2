@@ -15,7 +15,7 @@
 
 <!-- generic -->
 <meta name="description" content="The Vermont Brewers Association - Small State - Big Beer">
-<meta name="author" content="Robin Hoover - MooseDog Studios - Stowe, VT - www.moosedog.io">
+<meta name="author" content="Robin Hoover - MooseDog Studios - Stowe, VT - www.moosedog.io - robin.hoover@gmail.com">
 <meta name='robots' content='index,follow'>
 
 <!-- Mobile Stuff -->
@@ -69,7 +69,7 @@
 <body itemscope itemtype="http://schema.org/Organization" ng-app="vbaV2App">
 
     <header class="header">
-            <p class="mobile-back-button">Back</p>
+            <p class="mobile-back-button" data-back-button>Back</p>
             <h1 class="mobile-screen-title" itemprop="name">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" itemprop="url">Vermont Brewers</a>
             </h1>

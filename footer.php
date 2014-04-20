@@ -36,6 +36,7 @@
     <script src="/wp-content/themes/vbav2/js/vbaV2/filters/memberpage.js"></script>
     <script src="/wp-content/themes/vbav2/js/vbaV2/controllers/memberlist.js"></script>
     <script src="/wp-content/themes/vbav2/js/vbaV2/controllers/memberpage.js"></script>
+    <script src="/wp-content/themes/vbav2/js/vbaV2/directives/backbutton.js"></script>
     <script src="/wp-content/themes/vbav2/js/vbaV2/directives/bannerimage.js"></script>
     <script src="/wp-content/themes/vbav2/js/vbaV2/directives/showsocial.js"></script>
     <script src="/wp-content/themes/vbav2/js/vbaV2/directives/membermap.js"></script>
