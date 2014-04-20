@@ -1,13 +1,13 @@
 .frontpage {
     position: relative;
-    @include span(10);
+    @include span(10 of 12);
     @include squish(1,1);
     @include susy-breakpoint($bp-medium,$columns-medium) {
-        @include span(14);
+        @include span(14 of 16);
         @include squish(1,1);
     }
     @include susy-breakpoint($bp-large,$columns-large) {
-        @include span(20);
+        @include span(20 of 24);
         @include squish(2,2);
     }
     &-member {

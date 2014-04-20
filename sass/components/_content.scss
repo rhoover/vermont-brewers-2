@@ -1,4 +1,5 @@
 .content {
+    @include clearfix;
     top: rhythm(5, 16px);;
     position: relative;
     background: $white;

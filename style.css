@@ -180,6 +180,8 @@ p {
 }
 
 .innerpage, .memberpage {
+  overflow: hidden;
+  *zoom: 1;
   position: relative;
   width: 83.3333333%;
   float: left;
@@ -191,7 +193,7 @@ p {
 @media (min-width: 54em) {
   .innerpage, .memberpage {
     width: 56.25%;
-    float: right;
+    float: left;
     padding-left: 0.7230015%;
     padding-right: 0.7230015%;
     margin-left: 0%;
@@ -211,25 +213,6 @@ p {
 }
 .innerpage .post-title, .memberpage .post-title {
   margin-bottom: 1.5em;
-}
-
-.member-info-address, .member-info-phone, .member-info-link, .member-info-social {
-  color: #373737;
-  text-decoration: none;
-}
-@media (min-width: 75em) {
-  .member-info-address, .member-info-phone, .member-info-link, .member-info-social {
-    width: 66.6666667%;
-    float: right;
-    padding-left: 1.9280041%;
-    padding-right: 1.9280041%;
-    padding-left: 0;
-    padding-right: 3.8560082%;
-    text-align: right;
-  }
-  .member-info-address:last-of-type, .member-info-phone:last-of-type, .member-info-link:last-of-type, .member-info-social:last-of-type {
-    margin-bottom: 0.75em;
-  }
 }
 
 .VBA100-sprite, .VBA100-alchemist, .VBA100-backacrebeer, .VBA100-bobcat, .VBA100-coveredbridge, .VBA100-cropbistro, .VBA100-dropin, .VBA100-fiddlehead, .VBA100-foleybrothers, .VBA100-fourteenthstar, .VBA100-gratefulhands, .VBA100-harpoon, .VBA100-hillfarmstead, .VBA100-kingdombrewing, .VBA100-lawsons, .VBA100-longtrail, .VBA100-lostnationbrewing, .VBA100-madison, .VBA100-magichat, .VBA100-mcneills, .VBA100-northshire, .VBA100-norwichinn, .VBA100-ottercreek, .VBA100-perfectpear, .VBA100-rockart, .VBA100-switchback, .VBA100-threeneeds, .VBA100-trappfamily, .VBA100-troutriver, .VBA100-vpb, .VBA100-whetstonestation, .VBA100-zerogravity {
@@ -655,6 +638,17 @@ p {
   margin: 0 auto;
 }
 
+body {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+body::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
 .header {
   position: fixed;
   top: 0px;
@@ -924,6 +918,8 @@ p {
 }
 
 .content {
+  overflow: hidden;
+  *zoom: 1;
   top: 7.5em;
   position: relative;
   background: #f8f5f0;
@@ -1102,7 +1098,6 @@ p {
     margin-right: 0%;
   }
 }
-
 @media (min-width: 54em) {
   .member-sidebar-item {
     width: 100%;
@@ -1127,7 +1122,6 @@ p {
     margin-bottom: 1.5em;
   }
 }
-
 @media (min-width: 54em) {
   .member-sidebar-image {
     width: 20%;
@@ -1136,7 +1130,6 @@ p {
     padding-right: 2.3136049%;
   }
 }
-
 @media (min-width: 54em) {
   .member-sidebar-name {
     padding-top: 0.75em;
@@ -1152,63 +1145,137 @@ p {
   }
 }
 
+@media (min-width: 54em) {
+  .memberpage-info {
+    width: 37.5%;
+    float: left;
+    padding-left: 0.7230015%;
+    padding-right: 0.7230015%;
+    padding-left: 0;
+    margin-bottom: 4.5em;
+  }
+}
 @media (min-width: 75em) {
-  .memberpage-map {
-    width: 42.8571429%;
-    float: right;
-    padding-left: 0.8262875%;
-    padding-right: 0.8262875%;
-    clear: right;
+  .memberpage-info {
+    width: 53.3333333%;
+    float: left;
+    padding-left: 0.7712016%;
+    padding-right: 0.7712016%;
+    padding-left: 0;
+  }
+}
+@media (min-width: 54em) {
+  .memberpage-info-primary {
+    width: 100%;
+    float: left;
+    padding-left: 1.9280041%;
+    padding-right: 1.9280041%;
     padding: 0;
-    min-height: 600px;
-    background-color: rgba(0, 72, 17, 0.25);
-    border: 0.1em solid #00801e;
+    margin: 0;
   }
 }
 @media (min-width: 75em) {
-  .memberpage-about {
-    width: 57.1428571%;
+  .memberpage-info-primary {
+    width: 100%;
     float: left;
-    padding-left: 0.8262875%;
-    padding-right: 0.8262875%;
+    padding-left: 1.4460031%;
+    padding-right: 1.4460031%;
+    padding: 0;
+    margin-bottom: 1.5em;
+  }
+}
+@media (min-width: 54em) {
+  .memberpage-info-logo {
+    width: 50%;
+    float: left;
+    padding-left: 1.9280041%;
+    padding-right: 1.9280041%;
+  }
+}
+@media (min-width: 75em) {
+  .memberpage-info-logo {
+    width: 37.5%;
+    float: left;
+    padding-left: 1.4460031%;
+    padding-right: 1.4460031%;
+    min-height: 100px;
+  }
+}
+.memberpage-info-details {
+  overflow: hidden;
+  *zoom: 1;
+  width: 83.3333333%;
+  float: left;
+  padding-left: 0.964002%;
+  padding-right: 0.964002%;
+  color: #373737;
+}
+@media (min-width: 54em) {
+  .memberpage-info-details {
+    width: 50%;
+    float: right;
+    padding-left: 1.9280041%;
+    padding-right: 1.9280041%;
     padding-left: 0;
-    padding-top: 1.5em;
+    text-align: right;
+  }
+}
+@media (min-width: 75em) {
+  .memberpage-info-details {
+    width: 62.5%;
+    float: right;
+    padding-left: 1.4460031%;
+    padding-right: 1.4460031%;
     padding-right: 3.8560082%;
-    min-height: 600px;
   }
 }
-
-@media (min-width: 75em) {
-  .member-info {
-    width: 35.7142857%;
-    float: left;
-    padding-left: 0.8262875%;
-    padding-right: 0.8262875%;
-    padding-left: 0;
-  }
+.memberpage-info-address {
+  display: block;
 }
-@media (min-width: 75em) {
-  .member-info-logo {
-    float: left;
-  }
+.memberpage-info-phone {
+  margin-bottom: 1.5em;
+  display: block;
+  text-decoration: none;
+  color: #00801e;
 }
-@media (min-width: 75em) {
-  .member-info-phone {
+@media (min-width: 54em) {
+  .memberpage-info-phone {
     cursor: default;
+    color: #373737;
   }
 }
-.member-info-link {
+.memberpage-info-link {
+  display: block;
+  text-decoration: none;
   color: #00801e;
 }
 @media (min-width: 75em) {
-  .member-info-link:hover {
+  .memberpage-info-link:hover {
     text-decoration: underline;
   }
 }
-
-.member-social {
+.memberpage-info-openmap {
+  display: block;
+  padding: 0.375em 3.8560082%;
+  border-radius: .25em;
+  color: #00801e;
+}
+.memberpage-info-openmap:focus {
+  color: black;
+  font-weight: bold;
+}
+@media (min-width: 54em) {
+  .memberpage-info-openmap {
+    float: right;
+  }
+}
+@media (min-width: 75em) {
+  .memberpage-info-openmap {
+    display: none;
+  }
+}
+.memberpage-info-social-icon {
   display: inline-block;
-  float: right;
   opacity: .5;
   border: .1em solid transparent;
   border-radius: .25em;
@@ -1217,18 +1284,38 @@ p {
   -webkit-transition: background-color 0.3s ease-in, border 0.3s ease-in;
   transition: background-color 0.3s ease-in, border 0.3s ease-in;
 }
-.member-social:hover {
+.memberpage-info-social-icon:hover {
   background-color: rgba(55, 55, 55, 0.2);
   border: 0.1em solid rgba(55, 55, 55, 0.4);
 }
-
+.memberpage-info-about {
+  overflow: hidden;
+  *zoom: 1;
+}
 @media (min-width: 75em) {
-  .openmap {
-    display: none;
+  .memberpage-info-about {
+    padding-left: 0;
+    padding-top: 1.5em;
+    padding-right: .025em;
+    min-height: 600px;
+    border-top: 0.1em solid black;
+  }
+}
+@media (min-width: 75em) {
+  .memberpage-map {
+    width: 46.6666667%;
+    float: left;
+    padding-left: 0.7712016%;
+    padding-right: 0.7712016%;
+    clear: right;
+    padding: 0;
+    min-height: 600px;
+    background-color: rgba(0, 72, 17, 0.25);
+    border: 0.1em solid #00801e;
   }
 }
 
-.no-show {
+.social-noshow {
   display: none;
 }
 

@@ -1,8 +1,116 @@
 .memberpage {
     @extend %innerpage;
+    &-info {
+        @include susy-breakpoint($bp-medium,$columns-medium) {
+            @include span(6 of 16);
+            padding-left: 0;
+            margin-bottom: rhythm(3, 16px);
+        }
+        @include susy-breakpoint($bp-large,$columns-large) {
+            @include span(8 of 15);
+            padding-left: 0;
+        }
+        &-primary {
+            @include susy-breakpoint($bp-medium,$columns-medium) {
+                @include span(6 of 6);
+                padding: 0;
+                margin: 0;
+            }
+            @include susy-breakpoint($bp-large,$columns-large) {
+                @include span(8 of 8);
+                padding: 0;
+                margin-bottom: rhythm(1, 16px);
+            }
+        }
+        &-logo {
+            @include susy-breakpoint($bp-medium,$columns-medium) {
+                @include span(3 of 6);
+            }
+            @include susy-breakpoint($bp-large,$columns-large) {
+                @include span(3 of 8);
+                min-height: 100px;
+            }
+        }
+        &-details {
+            @include clearfix;
+            @include span(10);
+            color: $black;
+            @include susy-breakpoint($bp-medium,$columns-medium) {
+                @include span(3 of 6 last);
+                padding-left: 0;
+                text-align: right;
+            }
+            @include susy-breakpoint($bp-large,$columns-large) {
+                @include span(5 of 8 last);
+                padding-right: gutter(3);
+            }
+        }
+        &-address {
+            display: block;
+        }
+        &-phone {
+            margin-bottom: rhythm(1, 16px);
+            display: block;
+            text-decoration: none;
+            color: $lightgreen;
+            @include susy-breakpoint($bp-medium,$columns-medium) {
+                cursor: default;
+                color: $black;
+            }
+        }
+        &-link {
+            display: block;
+            text-decoration: none;
+            color: $lightgreen;
+            @include susy-breakpoint($bp-large,$columns-large) {
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        &-openmap {
+            display: block;
+            padding: rhythm(.25, 16px) gutter(3);
+            border-radius: .25em;
+            color: $lightgreen;
+            &:focus {
+                color: $darkgreen;
+                font-weight: bold;
+            }
+            @include susy-breakpoint($bp-medium,$columns-medium) {
+                float: right;
+            }
+            @include susy-breakpoint($bp-large,$columns-large) {
+                display: none;
+            }
+        }
+        &-social {
+            &-icon {
+                display: inline-block;
+                opacity: .5;
+                border: .1em solid transparent;
+                border-radius: .25em;
+                @include transition(background-color 0.3s ease-in, border 0.3s ease-in);
+                &:hover {
+                    background-color: rgba($black, .2);
+                    border: .1em solid rgba($black,.4);
+                }
+            }
+        }
+        &-about {
+            @include clearfix;
+            @include susy-breakpoint($bp-large,$columns-large) {
+                padding-left: 0;
+                padding-top: rhythm(1, 16px);
+                padding-right: .025em;
+                min-height: 600px;
+                border-top: .1em solid $darkgreen;
+            }
+        }
+    }
     &-map {
         @include susy-breakpoint($bp-large,$columns-large) {
-            @include span(6 of 14 last);
+            @include span(7 of 15);
             clear: right;
             padding: 0;
             min-height: 600px;
@@ -10,69 +118,8 @@
             border: .1em solid $lightgreen;
         }
     }
-    &-about {
-        @include susy-breakpoint($bp-large,$columns-large) {
-            @include span(8 of 14);
-            padding-left: 0;
-            padding-top: rhythm(1, 16px);
-            padding-right: gutter(3);
-            min-height: 600px;
-        }
-    }
 }
 
-.member-info {
-    @include susy-breakpoint($bp-large,$columns-large) {
-        @include span(5 of 14);
-        padding-left: 0;
-    }
-    &-logo {
-        @include susy-breakpoint($bp-large,$columns-large) {
-            float: left;
-        }
-    }
-    &-address {
-        @extend %member-details;
-    }
-    &-phone {
-        @extend %member-details;
-        @include susy-breakpoint($bp-large,$columns-large) {
-            cursor: default;
-        }
-    }
-    &-link {
-        @extend %member-details;
-        color: $lightgreen;
-        @include susy-breakpoint($bp-large,$columns-large) {
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-    }
-    &-social {
-        @extend %member-details;
-    }
-}
-
-.member-social {
-    display: inline-block;
-    float: right;
-    opacity: .5;
-    border: .1em solid transparent;
-    border-radius: .25em;
-    @include transition(background-color 0.3s ease-in, border 0.3s ease-in);
-    &:hover {
-        background-color: rgba($black, .2);
-        border: .1em solid rgba($black,.4);
-    }
-}
-
-.openmap {
-    @include susy-breakpoint($bp-large,$columns-large){
-        display: none;
-    }
-}
-
-.no-show {
+.social-noshow {
     display: none;
 }

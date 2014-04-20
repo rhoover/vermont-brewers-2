@@ -8,7 +8,7 @@ angular.module('vbaV2App')
         link: function (scope, element, attrs) {
 
             if (!attrs.href) {
-                element.addClass('no-show');
+                element.addClass('social-noshow');
             };
         }
     };

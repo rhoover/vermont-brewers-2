@@ -1,4 +1,5 @@
 body {
     @include susy-breakpoint($bp-medium, $columns-medium);
     @include susy-breakpoint($bp-large, $columns-large);
+    @include container;
 }

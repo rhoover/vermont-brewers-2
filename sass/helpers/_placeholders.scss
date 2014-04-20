@@ -15,33 +15,20 @@
 }
 
 %innerpage {
+    @include clearfix;
     position: relative;
     @include span(10);
     @include squish(1,1);
     @include susy-breakpoint($bp-medium,$columns-medium) {
-        @include span(last 9); //of 14
+        @include span(9 of 16);
         @include squish(0,1);
     }
     @include susy-breakpoint($bp-large,$columns-large) {
-        @include span(15); //of 20
+        @include span(15 of 24);
         @include squish(0,2);
         padding-left: span(1 of 15)/2;
     }
     .post-title {
         margin-bottom: rhythm(1, 16px);
-    }
-}
-
-%member-details {
-    color: $black;
-    text-decoration: none;
-    @include susy-breakpoint($bp-large,$columns-large) {
-        @include span(4 of 6 last);
-        padding-left: 0;
-        padding-right: gutter(3);
-        text-align: right;
-        &:last-of-type {
-            margin-bottom: rhythm(.5, 16px);
-        }
     }
 }
