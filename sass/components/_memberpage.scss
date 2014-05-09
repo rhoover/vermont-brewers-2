@@ -55,6 +55,7 @@
             color: $lightgreen;
             @include susy-breakpoint($bp-medium,$columns-medium) {
                 cursor: default;
+                pointer-events: none;
                 color: $black;
             }
         }

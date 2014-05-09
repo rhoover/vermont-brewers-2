@@ -931,7 +931,7 @@ body::after {
 }
 @media (min-width: 54em) {
   .content {
-    top: 16em;
+    top: 17em;
   }
 }
 @media (min-width: 75em) {

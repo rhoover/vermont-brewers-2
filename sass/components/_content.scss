@@ -14,7 +14,7 @@
     width: 100%;
     z-index: 5;
     @include susy-breakpoint($bp-medium,$columns-medium) {
-        top: 16em;
+        top: 17em;
     }
     @include susy-breakpoint($bp-large,$columns-large) {
         top: 33em;

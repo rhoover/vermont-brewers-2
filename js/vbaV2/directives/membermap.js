@@ -1,48 +1,35 @@
 'use strict';
 
 angular.module('vbaV2App')
-    .directive('memberpageMap', [function () {
+    .directive('memberpageMap', ['$timeout', 'googleMap', function ($timeout, googleMap) {
 
         return {
             restrict: 'A',
             link: function (scope, element, attrs) {
 
-                var lat = scope.member.latitude;
-                var lon = scope.member.longitude;
+                $timeout(function () {
 
-                //Map Stuff
-                var myMapOptions, map, marker, infoContent, infowindow;
+                    var lat = scope.member.latitude;
+                    var lon = scope.member.longitude;
 
-                myMapOptions = {
-                    zoom: 10,
-                    center: new google.maps.LatLng(lat, lon),
-                    mapTypeControl: true,
-                    mapTypeControlOptions: {
-                        style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
-                    },
-                    zoomControl: true,
-                    streetViewControl: false,
-                    mapTypeId: google.maps.MapTypeId.ROADMAP
-                };
+                    //Map Stuff
+                    var myMapOptions, map, marker, infoContent, infowindow;
+                    var div = element[0];
 
-                map = new google.maps.Map(element[0], myMapOptions);
+                    myMapOptions = googleMap.mapOptions(10, lat, lon);
 
-                marker = new google.maps.Marker ({
-                    position: new google.maps.LatLng(lat, lon),
-                    map: map
-                });
+                    map= googleMap.mapCreator(div, myMapOptions);
 
-                infoContent = '<p>'+scope.member.name+'</p>'+
-                '<p>'+scope.member.address+'</p>'+
-                '<p>'+scope.member.city+', '+scope.member.state+'</p>';
+                    marker = googleMap.mapMarker(map, lat, lon);
 
-                infowindow = new google.maps.InfoWindow({
-                    content: infoContent
-                });
+                    infoContent = '<p>'+scope.member.name+'</p>'+
+                    '<p>'+scope.member.address+'</p>'+
+                    '<p>'+scope.member.city+', '+scope.member.state+'</p>';
 
-                google.maps.event.addListener(marker, 'click', function () {
-                    infowindow.open(map, marker);
-                });
+                    infowindow = googleMap.infoWindowCreator(infoContent);
+
+                    googleMap.infoWindowClick(map, marker, infowindow);
+                }, 0); //end $timeout
             } //end link function
         }; //end return
     }]);
