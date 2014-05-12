@@ -6,7 +6,7 @@ module.exports = function (grunt) {
     //because you can't abstract too much
     var vbav2Config = {
         jsCustom: 'js/vbaV2',
-        jsAngularLibraries: 'js/libraries/angular',
+        jsLibraries: 'js/libraries',
         production: 'staging'
     }
     grunt.initConfig({
@@ -18,7 +18,7 @@ module.exports = function (grunt) {
             production: {
                 files: [{
                     dot: true,
-                    src: ['<%= vbav2.production %>/*']
+                    src: ['<%=vbav2.production %>/*']
                 }]
             }
         },
@@ -40,15 +40,15 @@ module.exports = function (grunt) {
                     '<%=vbav2.jsCustom %>/directives/membermap.js',
                     '<%=vbav2.jsCustom %>/directives/allmembermap.js'
                 ],
-                dest: '<%= vbav2.production %>/js/vbaV2/vba2.min.js'
+                dest: '<%=vbav2.production %>/js/vbaV2/vbav2.min.js'
             },
             angular: {
                 src: [
-                '<%=vbav2.jsAngularLibraries %>angular/angular.min.js',
-                '<%=vbav2.jsAngularLibraries %>angular-animate/angular-animate.min.js',
-                '<%=vbav2.jsAngularLibraries %>angular-touch/angular-touch.min.js'
+                '<%=vbav2.jsLibraries %>/angular/angular.min.js',
+                '<%=vbav2.jsLibraries %>/angular-animate/angular-animate.min.js',
+                '<%=vbav2.jsLibraries %>/angular-touch/angular-touch.min.js'
                 ],
-                dest: '<%=vbav2.production %>/js/libraries/angular/all-angular.min.js'
+                dest: '<%=vbav2.production %>/js/libraries/all-angular.min.js'
             }
         },
 
@@ -64,7 +64,7 @@ module.exports = function (grunt) {
                         // 'inc/*', //solved by tweaking functions.php
                         // 'languages/*', //solved by tweaking functions.php
                         'style.css',
-                        'js/libraries/angular/angular.min.js',
+                        // 'js/libraries/angular/angular.min.js',
                         'fonts/*',
                         'images/*',
                         'data/*'
