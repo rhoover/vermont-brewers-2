@@ -45,7 +45,7 @@ Template Name: Member Page
 
         </div>
 
-        <div class="memberpage-map" data-memberpage-map data-latitude="{{member.latitude}}"></div>
+        <div class="memberpage-map" data-memberpage-map></div>
 
     </section> <!-- end .memberpage -->
 

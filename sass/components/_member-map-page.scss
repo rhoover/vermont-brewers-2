@@ -1,0 +1,14 @@
+.membershipmap-page {
+    @include susy-breakpoint($bp-large,$columns-large) {
+        @include span(15 of 24);
+        @include squish(0,2);
+    }
+    &-map {
+        width: 100%;
+        min-height: 50em;
+        @include susy-breakpoint($bp-large,$columns-large) {
+            height: rhythm(35, 16px);
+            padding-left: 0;
+        }
+    }
+}

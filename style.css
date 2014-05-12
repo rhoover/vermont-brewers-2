@@ -1128,6 +1128,7 @@ body::after {
     float: left;
     padding-left: 2.3136049%;
     padding-right: 2.3136049%;
+    padding: 0;
   }
 }
 @media (min-width: 54em) {
@@ -1241,6 +1242,7 @@ body::after {
 @media (min-width: 54em) {
   .memberpage-info-phone {
     cursor: default;
+    pointer-events: none;
     color: #373737;
   }
 }
@@ -1317,6 +1319,29 @@ body::after {
 
 .social-noshow {
   display: none;
+}
+
+.membershipmap-page {
+  min-height: 50em;
+}
+@media (min-width: 75em) {
+  .membershipmap-page {
+    width: 62.5%;
+    float: left;
+    padding-left: 0.482001%;
+    padding-right: 0.482001%;
+    margin-left: 0%;
+    margin-right: 8.3333333%;
+  }
+}
+.membershipmap-page-map {
+  width: 100%;
+}
+@media (min-width: 75em) {
+  .membershipmap-page-map {
+    height: 52.5em;
+    padding-left: 0;
+  }
 }
 
 .footer {

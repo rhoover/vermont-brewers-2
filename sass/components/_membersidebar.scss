@@ -36,6 +36,7 @@
     &-image {
         @include susy-breakpoint($bp-medium,$columns-medium) {
             @include span(1 of 5);
+            padding: 0;
         }
     }
     &-name {
