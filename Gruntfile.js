@@ -23,6 +23,9 @@ module.exports = function (grunt) {
             }
         },
 
+        //
+        //let's all join together
+        //
         concat: {
             vbav2: {
                 src: [
@@ -52,7 +55,9 @@ module.exports = function (grunt) {
             }
         },
 
-        // Put files not handled in other tasks here
+        //
+        // Copy files not handled in other tasks
+        //
         copy: {
             production: {
                 files: [{
@@ -63,7 +68,7 @@ module.exports = function (grunt) {
                         '*.php',
                         // 'inc/*', //solved by tweaking functions.php
                         // 'languages/*', //solved by tweaking functions.php
-                        'style.css',
+                        // 'style.css',
                         // 'js/libraries/angular/angular.min.js',
                         'fonts/*',
                         'images/*',
@@ -71,19 +76,45 @@ module.exports = function (grunt) {
                     ]
                 }]
             }
+        },
+
+        //
+        //Minify the CSS
+        //
+        cssmin: {
+            minify: {
+                expand: true,
+                src: ['*.css', '!*.min.css'],
+                dest: '<%=vbav2.production %>'
+            }
+        },
+
+        //
+        //Revision the files
+        //
+        rev: {
+            assets: {
+                files: [{
+                    src: [
+                    '<%=vbav2.production %>/js/vbaV2/{,*/}*.js',
+                    '<%=vbav2.production %>/js/libraries/{,*/}*.js'
+                    ]
+                }]
+            }
         }
 
     }); //end initConfig
 
-    //register tasks here
+    //
+    //Register tasks here
+    //
     grunt.registerTask('build', [
         'clean:production',
         'concat:vbav2',
         'concat:angular',
-        // 'ngmin',
-        'copy:production'
-        //  'cssmin',
-        //  'rev'
+        'copy:production',
+         'cssmin:minify',
+         'rev'
      ]);
 
 
