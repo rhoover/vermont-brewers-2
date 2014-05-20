@@ -33,7 +33,6 @@
         }
         &-details {
             @include clearfix;
-            @include span(10);
             color: $black;
             @include susy-breakpoint($bp-medium,$columns-medium) {
                 @include span(3 of 6 last);
@@ -71,7 +70,6 @@
         }
         &-openmap {
             display: block;
-            padding: rhythm(.25, 16px) gutter(3);
             border-radius: .25em;
             color: $lightgreen;
             &:focus {
@@ -80,6 +78,7 @@
             }
             @include susy-breakpoint($bp-medium,$columns-medium) {
                 float: right;
+                padding: rhythm(.25, 16px) gutter(3);
             }
             @include susy-breakpoint($bp-large,$columns-large) {
                 display: none;

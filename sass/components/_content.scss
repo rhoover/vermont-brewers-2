@@ -1,8 +1,7 @@
 .content {
     @include clearfix;
-    top: rhythm(5, 16px);;
+    top: rhythm(4.5, 16px);
     position: relative;
-    background: $white;
     //Inspired by: http://stackoverflow.com/questions/22560628/add-a-hatch-pattern-over-a-linear-gradient-in-a-div
     //A CSS cross-hatch pattern
     background-image:
@@ -12,11 +11,14 @@
     background-position: 0px 0px, .3em .3em;
     // End pattern
     width: 100%;
+    background: $white;
     z-index: 5;
-    @include susy-breakpoint($bp-medium,$columns-medium) {
+
+    @include susy-breakpoint($bp-medium, $columns-medium) {
         top: 17em;
     }
-    @include susy-breakpoint($bp-large,$columns-large) {
+
+    @include susy-breakpoint($bp-large, $columns-large) {
         top: 33em;
     }
 }

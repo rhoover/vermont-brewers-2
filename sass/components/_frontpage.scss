@@ -1,14 +1,14 @@
 .frontpage {
     position: relative;
     @include span(10 of 12);
-    @include squish(1,1);
-    @include susy-breakpoint($bp-medium,$columns-medium) {
+    @include squish(1, 1);
+    @include susy-breakpoint($bp-medium, $columns-medium) {
         @include span(14 of 16);
-        @include squish(1,1);
+        @include squish(1, 1);
     }
-    @include susy-breakpoint($bp-large,$columns-large) {
+    @include susy-breakpoint($bp-large, $columns-large) {
         @include span(20 of 24);
-        @include squish(2,2);
+        @include squish(2, 2);
     }
     &-member {
         @include span(12);
@@ -19,7 +19,7 @@
         text-decoration: none;
         border-radius: .75em;
         border: .1em solid rgba($green, .25);
-        background-color: rgba(255,255,255,.45);
+        background-color: rgba(255, 255 ,255, .45);
         &:hover {
             border: .1em solid rgba($green, 1);
             cursor: pointer;
@@ -34,10 +34,10 @@
             background: rgba($black, .02);
             border: .1em solid rgba($green, 1);
         }
-        @include susy-breakpoint($bp-medium,$gallery-medium) {
+        @include susy-breakpoint($bp-medium, $gallery-medium) {
             @include gallery(7 of 14);
         }
-        @include susy-breakpoint($bp-large,$gallery-large) {
+        @include susy-breakpoint($bp-large, $gallery-large) {
             @include gallery(4 of 20);
         }
         &-title {
@@ -59,7 +59,7 @@
     @extend .frontpage;
     padding: 1em 0 1em 0;
     text-align: center;
-    @include susy-breakpoint($bp-medium,$columns-medium) {
+    @include susy-breakpoint($bp-medium, $columns-medium) {
         padding: 2em 0 2em 0;
     }
 }

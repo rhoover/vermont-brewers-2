@@ -76,7 +76,8 @@
             <h1 class="big-screen-title" itemprop="name">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" itemprop="url">Vermont Brewers Association</a>
             </h1>
-            <p class="mobile-menu-button">Menu</p>
+            <!-- <p class="mobile-menu-button" data-menu-mover>Menu</p> -->
+            <p class="mobile-menu-button" ng-click="moveme = 'navmove' ">Menu</p>
     </header><!-- end .header -->
 
     <?php
@@ -88,7 +89,7 @@
             'container' => false, // this is usually a div outside the menu ul, we don't need it hence false
             'menu_id' => '', //added by me
             'menu_class' => 'nav-menu', //added by me
-            'items_wrap' => '<nav class="%2$s" data-nav-menu="moveMenu">%3$s</nav>', // replacing the ul with nav, remove id too
+            'items_wrap' => '<nav class="%2$s" ng-class="moveme"><p class="close-menu" ng-click="moveme=\' \' ">Close Menu</p>%3$s</nav>', // replacing the ul with nav, remove id too
             'echo' => false, // don't display it just yet, instead we're storing it in the variable $cleanermenu
         ) );
         // Find the closing bracket of each li and the opening of the link (><a), then all instances of "<li"

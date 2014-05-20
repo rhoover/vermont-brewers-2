@@ -78,6 +78,7 @@
     text-align: center;
     color: rgba($white, .5);
     text-decoration: underline;
+    border-right: .1em solid $yellow;
     @include breakpoint($bp-medium) {
         @include rhythm(.75,0,0,.75,16px);
     }
@@ -87,4 +88,6 @@
 }
 .mobile-menu-button {
     @extend .mobile-back-button;
+    border-right: none;
+    border-left: .1em solid $yellow;
 }

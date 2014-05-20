@@ -15,3 +15,4 @@ $white: lighten($yellow, 35%);
 $experimental-support-for-svg: true;
 
 $banner-gradient: linear-gradient(top, rgba($bannergreen-top, .85) 0%, rgba($bannergreen-bottom, .85) 100%);
+$mobile-nav-gradient: linear-gradient(top, rgba($bannergreen-bottom, .85) 100%, rgba($bannergreen-top, .85) 0%);

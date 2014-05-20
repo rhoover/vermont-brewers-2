@@ -41,7 +41,8 @@ module.exports = function (grunt) {
                     '<%=vbav2.jsCustom %>/directives/backbutton.js',
                     '<%=vbav2.jsCustom %>/directives/showsocial.js',
                     '<%=vbav2.jsCustom %>/directives/membermap.js',
-                    '<%=vbav2.jsCustom %>/directives/allmembermap.js'
+                    '<%=vbav2.jsCustom %>/directives/allmembermap.js',
+                    '<%=vbav2.jsCustom %>/directives/menumover.js'
                 ],
                 dest: '<%=vbav2.production %>/js/vbaV2/vbav2.min.js'
             },

@@ -25,9 +25,7 @@ Template Name: Member Page
         <div class="memberpage-info">
 
             <div class="memberpage-info-primary">
-                <div class="memberpage-info-logo">
-                    <div class="VBA100-{{member.selector}}"></div>
-                </div>
+                <div class="memberpage-info-logo VBA100-{{member.selector}}"></div>
 
                 <div class="memberpage-info-details">
                     <p class="memberpage-info-address">{{member.address}}</p>

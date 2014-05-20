@@ -11,7 +11,7 @@
 
     <footer class="footer">
         <div class="footer-container">
-            <p class="footer-copyright">&copy; The Vermont Brewers Association 2013</p>
+            <p class="footer-copyright">&copy; The Vermont Brewers Assoc. 2014</p>
             <section class="footer-social">
                 <a href="http://www.facebook.com/VermontBrewersAssociation" target="_blank" class="social-logo"><div class="social-facebook"></div></a>
                 <a href="https://twitter.com/VermontBrewers" target="_blank" class="social-logo "><div class="social-twitter"></div></a>
