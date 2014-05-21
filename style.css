@@ -215,6 +215,18 @@ p {
   margin-bottom: 1.5em;
 }
 
+.memberpage-info-phone, .memberpage-info-link, .memberpage-info-openmap {
+  display: block;
+  margin: 0.75em 0 1.125em 0;
+  padding: 0.75em 0;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  border-radius: .25em;
+  border: 0.1em solid rgba(55, 55, 55, 0.4);
+  background-color: rgba(55, 55, 55, 0.15);
+}
+
 .VBA100-sprite, .VBA100-alchemist, .VBA100-backacrebeer, .VBA100-bobcat, .VBA100-coveredbridge, .VBA100-cropbistro, .VBA100-dropin, .VBA100-fiddlehead, .VBA100-foleybrothers, .VBA100-fourteenthstar, .VBA100-gratefulhands, .VBA100-harpoon, .VBA100-hillfarmstead, .VBA100-kingdombrewing, .VBA100-lawsons, .VBA100-longtrail, .VBA100-lostnationbrewing, .VBA100-madison, .VBA100-magichat, .VBA100-mcneills, .VBA100-northshire, .VBA100-norwichinn, .VBA100-ottercreek, .VBA100-perfectpear, .VBA100-rockart, .VBA100-switchback, .VBA100-threeneeds, .VBA100-trappfamily, .VBA100-troutriver, .VBA100-vpb, .VBA100-whetstonestation, .VBA100-zerogravity {
   background-image: url('images/VBA100-s11f354ca64.png');
   background-repeat: no-repeat;
@@ -1282,32 +1294,28 @@ body::after {
   display: block;
 }
 .memberpage-info-phone {
-  margin-bottom: 1.5em;
-  display: block;
   text-decoration: none;
-  color: #00801e;
 }
 @media (min-width: 54em) {
   .memberpage-info-phone {
     cursor: default;
     pointer-events: none;
+    text-align: right;
     color: #373737;
+    border: none;
+    background-color: transparent;
   }
 }
-.memberpage-info-link {
-  display: block;
-  text-decoration: none;
-  color: #00801e;
-}
 @media (min-width: 75em) {
+  .memberpage-info-link {
+    text-align: right;
+    color: #00801e;
+    border: none;
+    background-color: transparent;
+  }
   .memberpage-info-link:hover {
     text-decoration: underline;
   }
-}
-.memberpage-info-openmap {
-  display: block;
-  border-radius: .25em;
-  color: #00801e;
 }
 .memberpage-info-openmap:focus {
   color: black;

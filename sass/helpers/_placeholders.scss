@@ -32,3 +32,15 @@
         margin-bottom: rhythm(1, 16px);
     }
 }
+
+%mobile-info-buttons {
+    display: block;
+    margin: rhythm(.5,16px) 0 rhythm(.75,16px) 0;
+    padding: rhythm(.5,16px) 0;
+    color: $darkgreen;
+    text-decoration: none;
+    text-align: center;
+    border-radius: .25em;
+    border: .1em solid rgba($black,.4);
+    background-color: rgba($black, .15);
+}

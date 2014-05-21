@@ -48,30 +48,31 @@
             display: block;
         }
         &-phone {
-            margin-bottom: rhythm(1, 16px);
-            display: block;
             text-decoration: none;
-            color: $lightgreen;
+            @extend %mobile-info-buttons;
             @include susy-breakpoint($bp-medium,$columns-medium) {
                 cursor: default;
                 pointer-events: none;
+                text-align: right;
                 color: $black;
+                border: none;
+                background-color: transparent;
             }
         }
         &-link {
-            display: block;
-            text-decoration: none;
-            color: $lightgreen;
+            @extend %mobile-info-buttons;
             @include susy-breakpoint($bp-large,$columns-large) {
+                text-align: right;
+                color: $lightgreen;
+                border: none;
+                background-color: transparent;
                 &:hover {
                     text-decoration: underline;
                 }
             }
         }
         &-openmap {
-            display: block;
-            border-radius: .25em;
-            color: $lightgreen;
+            @extend %mobile-info-buttons;
             &:focus {
                 color: $darkgreen;
                 font-weight: bold;

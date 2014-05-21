@@ -18,14 +18,11 @@ Template Name: Member Page
         <?php echo "ng-controller=\"MemberPageCtrl\"  data-member=\"$inner_value\" "; ?>
     >
 
-        <h3 class="post-title">
-            <?php the_title(); ?>
-        </h3>
 
         <div class="memberpage-info">
 
             <div class="memberpage-info-primary">
-                <div class="memberpage-info-logo VBA100-{{member.selector}}"></div>
+                <div class="VBA100-{{member.selector}} memberpage-info-logo"></div>
 
                 <div class="memberpage-info-details">
                     <p class="memberpage-info-address">{{member.address}}</p>
