@@ -23,6 +23,7 @@
             }
         }
         &-logo {
+            margin: 0 auto;
             @include susy-breakpoint($bp-medium,$columns-medium) {
                 @include span(3 of 6);
             }
@@ -45,7 +46,11 @@
             }
         }
         &-address {
+            text-align: center;
             display: block;
+            @include susy-breakpoint($bp-large,$columns-large) {
+                text-align: right;
+            }
         }
         &-phone {
             text-decoration: none;
@@ -110,12 +115,19 @@
         }
     }
     &-map {
+        @include span(12 of 12);
+        position: fixed !important; //nasty-ass important to override Google position: relative
+        top: 0%;
+        right: 100%;
+        min-height: 900px;
+        overflow: hidden;
+        padding: 0;
+        @include transition(all 0.75s cubic-bezier(0.250, 0.460, 0.450, 0.940));
+        background-color: rgba($green, .25);
         @include susy-breakpoint($bp-large,$columns-large) {
             @include span(7 of 15);
-            clear: right;
-            padding: 0;
-            min-height: 600px;
-            background-color: rgba($green, .25);
+            position: relative;
+            @include clearfix;
             border: .1em solid $lightgreen;
         }
     }
@@ -123,4 +135,10 @@
 
 .social-noshow {
     display: none;
+}
+
+.memberpage-map.mapmove {
+    // @include translate3d(0, 0, 0);
+    top: 0%;
+    right: 0%;
 }

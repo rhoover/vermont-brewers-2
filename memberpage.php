@@ -29,7 +29,7 @@ Template Name: Member Page
                     <p class="memberpage-info-address">{{member.city}}, {{member.state}}  {{zip}}</p>
                     <a href="tel:{{member.phone}}" class="memberpage-info-phone">{{member.phone}}</a>
                     <a href="{{member.url}}" target="_blank" class="memberpage-info-link">{{member.name}}</a>
-                    <div class="memberpage-info-openmap">Open Map</div>
+                    <div class="memberpage-info-openmap" ng-click="movemap='mapmove' ">Open Map</div>
                     <a href="{{member.facebook}}" class="memberpage-info-social" data-show-social target="_blank"><span class="memberpage-info-social-icon social-facebook"></span></a>
                     <a href="{{member.twitter}}" class="memberpage-info-social" data-show-social target="_blank"><span class="memberpage-info-social-icon social-twitter"></span></a>
                     <a href="{{member.googleplus}}" class="memberpage-info-social" data-show-social target="_blank"><span class="memberpage-info-social-icon social-google"></span></a>
@@ -40,7 +40,7 @@ Template Name: Member Page
 
         </div>
 
-        <div class="memberpage-map" data-memberpage-map></div>
+        <div class="memberpage-map" data-memberpage-map ng-class="movemap"></div>
 
     </section> <!-- end .memberpage -->
 
