@@ -40,7 +40,10 @@ Template Name: Member Page
 
         </div>
 
-        <div class="memberpage-map" data-memberpage-map ng-class="movemap"></div>
+        <div class="memberpage-map" ng-class="movemap">
+            <p class="memberpage-map-close" ng-click="movemap=' ' ">Close Map</p>
+            <div class="memberpage-map-google" data-memberpage-map></div>
+        </div>
 
     </section> <!-- end .memberpage -->
 

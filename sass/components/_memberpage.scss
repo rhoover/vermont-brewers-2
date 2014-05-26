@@ -116,29 +116,46 @@
     }
     &-map {
         @include span(12 of 12);
-        position: fixed !important; //nasty-ass important to override Google position: relative
-        top: 0%;
+        position: fixed;
+        top: 6.75em;
+        top: 6.75em;
         right: 100%;
-        min-height: 900px;
-        overflow: hidden;
         padding: 0;
         @include transition(all 0.75s cubic-bezier(0.250, 0.460, 0.450, 0.940));
-        background-color: rgba($green, .25);
+        background-color: $white;
         @include susy-breakpoint($bp-large,$columns-large) {
             @include span(7 of 15);
             position: relative;
+            top: 0;
+            padding: 0;
+            right: 0%;
             @include clearfix;
             border: .1em solid $lightgreen;
+        }
+        &-close {
+            padding: rhythm(.5, 16px) 0;
+            text-align: center;
+            font-family: $Fabrica;
+            color: $darkgreen;
+            background-color: rgba($black, .15);
+            border-bottom: .1em solid rgba($black,.4);
+            border-top: .1em solid rgba($black,.4);
+            @include susy-breakpoint($bp-large,$columns-large) {
+                display: none;
+            }
+        }
+        &-google {
+            top: 0;
+            min-height: 900px;
+            overflow: hidden;
         }
     }
 }
 
-.social-noshow {
-    display: none;
+.memberpage-map.mapmove {
+    right: 0%;
 }
 
-.memberpage-map.mapmove {
-    // @include translate3d(0, 0, 0);
-    top: 0%;
-    right: 0%;
+.social-noshow {
+    display: none;
 }

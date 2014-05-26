@@ -984,7 +984,7 @@ body::after {
 .content {
   overflow: hidden;
   *zoom: 1;
-  top: 6.75em;
+  margin-top: 6.75em;
   position: relative;
   background-image: linear-gradient(45deg, rgba(190, 170, 119, 0.05) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 75%, rgba(190, 170, 119, 0.05) 75%, rgba(190, 170, 119, 0.05)), linear-gradient(45deg, rgba(190, 170, 119, 0.05) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 75%, rgba(190, 170, 119, 0.05) 75%, rgba(190, 170, 119, 0.05));
   background-size: .4em .4em, .4em .4em;
@@ -995,6 +995,7 @@ body::after {
 }
 @media (min-width: 54em) {
   .content {
+    margin-top: 0;
     top: 17em;
   }
 }
@@ -1004,8 +1005,10 @@ body::after {
   }
 }
 
-.inner-content {
-  padding-top: 1.5em;
+@media (min-width: 54em) {
+  .inner-content {
+    padding-top: 1.5em;
+  }
 }
 
 .frontpage, .lede {
@@ -1373,17 +1376,16 @@ body::after {
   float: left;
   padding-left: 0.964002%;
   padding-right: 0.964002%;
-  position: fixed !important;
-  top: 0%;
+  position: fixed;
+  top: 6.75em;
+  top: 6.75em;
   right: 100%;
-  min-height: 900px;
-  overflow: hidden;
   padding: 0;
   -moz-transition: all 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   -o-transition: all 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   -webkit-transition: all 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transition: all 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  background-color: rgba(0, 72, 17, 0.25);
+  background-color: #f8f5f0;
 }
 @media (min-width: 75em) {
   .memberpage-map {
@@ -1392,19 +1394,40 @@ body::after {
     padding-left: 0.7712016%;
     padding-right: 0.7712016%;
     position: relative;
+    top: 0;
+    padding: 0;
+    right: 0%;
     overflow: hidden;
     *zoom: 1;
     border: 0.1em solid #00801e;
   }
 }
-
-.social-noshow {
-  display: none;
+.memberpage-map-close {
+  padding: 0.75em 0;
+  text-align: center;
+  font-family: "Fabrica", helvitica, arial, sans-serif;
+  color: black;
+  background-color: rgba(55, 55, 55, 0.15);
+  border-bottom: 0.1em solid rgba(55, 55, 55, 0.4);
+  border-top: 0.1em solid rgba(55, 55, 55, 0.4);
+}
+@media (min-width: 75em) {
+  .memberpage-map-close {
+    display: none;
+  }
+}
+.memberpage-map-google {
+  top: 0;
+  min-height: 900px;
+  overflow: hidden;
 }
 
 .memberpage-map.mapmove {
-  top: 0%;
   right: 0%;
+}
+
+.social-noshow {
+  display: none;
 }
 
 @media (min-width: 75em) {
