@@ -11,7 +11,7 @@ Template Name: Member Page
 
 <?php while ( have_posts() ) : the_post(); ?>
 
-    <?php get_template_part('membersidebar'); ?>
+    <?php get_template_part('template-parts/content-membersidebar'); ?>
 
     <section class="memberpage"
         <?php $inner_value = get_post_meta($post->ID, 'member-class', true); ?>

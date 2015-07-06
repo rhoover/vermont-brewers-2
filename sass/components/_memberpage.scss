@@ -2,7 +2,7 @@
     @extend %innerpage;
     &-info {
         @include susy-breakpoint($bp-medium,$columns-medium) {
-            @include span(6 of 16);
+            @include span(16 of 16);
             padding-left: 0;
             margin-bottom: rhythm(3, 16px);
         }
@@ -18,7 +18,7 @@
             }
             @include susy-breakpoint($bp-large,$columns-large) {
                 @include span(8 of 8);
-                padding: 0;
+                padding: rhythm(1, 16px) 0 0 0;
                 margin-bottom: rhythm(1, 16px);
             }
         }
@@ -48,7 +48,7 @@
         &-address {
             text-align: center;
             display: block;
-            @include susy-breakpoint($bp-large,$columns-large) {
+            @include susy-breakpoint($bp-medium,$columns-medium) {
                 text-align: right;
             }
         }
@@ -83,7 +83,6 @@
                 font-weight: bold;
             }
             @include susy-breakpoint($bp-medium,$columns-medium) {
-                float: right;
                 padding: rhythm(.25, 16px) gutter(3);
             }
             @include susy-breakpoint($bp-large,$columns-large) {
@@ -104,7 +103,8 @@
             }
         }
         &-about {
-            @include clearfix;
+            clear: both;
+            float: left;
             @include susy-breakpoint($bp-large,$columns-large) {
                 padding-left: 0;
                 padding-top: rhythm(1, 16px);
@@ -117,12 +117,14 @@
     &-map {
         @include span(12 of 12);
         position: fixed;
-        top: 6.75em;
-        top: 6.75em;
+        top: 3em;
         right: 100%;
         padding: 0;
         @include transition(all 0.75s cubic-bezier(0.250, 0.460, 0.450, 0.940));
         background-color: $white;
+        @include susy-breakpoint($bp-medium,$columns-medium) {
+            top: 17em;
+        }
         @include susy-breakpoint($bp-large,$columns-large) {
             @include span(7 of 15);
             position: relative;

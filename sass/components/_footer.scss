@@ -4,9 +4,6 @@
     border-top: 1px solid darken($darkgreen, 15%);
     background: darken($bannergreen, 15%);
     @include box-shadow(0px 1px 0px rgba($white, .30) inset);
-}
-.footer-container {
-    background: inherit;
     padding: 1em 0;
     @include pad(.5, .5);
     @include susy-breakpoint($bp-large, $columns-large) {
@@ -15,12 +12,19 @@
 }
 .footer-copyright {
     display: inline-block;
-    // padding-top: 1em;
-    @extend %small-font;
+    @include typeSize(tiny);
     color: $white;
+    @include susy-breakpoint($bp-large, $columns-large) {
+        @include span(12 of 24);
+        @include typeSize(small);
+    }
 }
 .footer-social {
-    @include span(last 4);
+    @include span(last 5);
+    margin-top: -.75em;
+    @include susy-breakpoint($bp-large, $columns-large) {
+        @include span(last 4);
+    }
 }
 .social-logo {
     display: inline-block;

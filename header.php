@@ -11,7 +11,7 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 
-<title><?php global $page, $paged; wp_title( '|', true, 'left' );?></title>
+<title><?php global $page, $paged; wp_title( '|', true, 'right' );?></title>
 
 <!-- generic -->
 <meta name="description" content="The Vermont Brewers Association - Small State - Big Beer">
@@ -99,10 +99,10 @@
         echo str_replace( $find, $replace, $cleanermenu );
     ?><!-- end .nav-menu -->
 
-    <div class="herobanner" data-banner-image>
+    <section class="herobanner" data-banner-image>
         <h2 class="herobanner-header"><span class="herobanner-yellow">small state.</span><span class="herobanner-green"> BIG BEER.</span></h2>
         <p class="herobanner-text">Maybe there's something in the water. Maybe there's something in the air.<br />Maybe..... there's something up here in the mountains.<br />Vermont's brewers are making magic with it.</p>
-    </div><!-- end .hero-banner -->
+    </section><!-- end .hero-banner -->
 
     <main
         <?php if (is_front_page()) { ?>

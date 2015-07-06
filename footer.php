@@ -10,13 +10,11 @@
 
 
     <footer class="footer">
-        <div class="footer-container">
             <p class="footer-copyright">&copy; The Vermont Brewers Assoc. 2014</p>
             <section class="footer-social">
                 <a href="http://www.facebook.com/VermontBrewersAssociation" target="_blank" class="social-logo"><div class="social-facebook"></div></a>
                 <a href="https://twitter.com/VermontBrewers" target="_blank" class="social-logo "><div class="social-twitter"></div></a>
             </section>
-        </div>
     </footer><!-- end .footer -->
     <!-- end .content -->
     <?php wp_footer(); ?>
@@ -25,7 +23,7 @@
 
     <!-- Grab Google Maps API If Not FrontPage -->
     <?php if ( !is_front_page() ) :?>
-        <script src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?sensor=true&language=en"></script>
     <?php endif;?>
 
     <script src="/wp-content/themes/vbav2/js/libraries/angular/angular.js"></script>

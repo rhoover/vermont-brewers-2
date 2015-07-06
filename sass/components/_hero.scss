@@ -1,6 +1,7 @@
 .herobanner {
     @extend %responsive-trigger;
     width: 100%;
+    clear: both;
     position: fixed;
     top: rhythm(2.1, 16px);
     @include susy-breakpoint($bp-medium, $columns-medium) {
@@ -11,6 +12,7 @@
     }
     &-header {
         width: 100%;
+        clear: both;
         @extend %large-font;
         @extend %weight-strong;
         @include rhythm(.6,0,0,1,21px);
@@ -23,8 +25,8 @@
             @include rhythm(1,0,0,1,80px);
         }
         @include susy-breakpoint($bp-large, $columns-large) {
-            @include adjust-font-size-to(120px);
-            @include rhythm(5,0,0,1,120px);
+            @include adjust-font-size-to(100px);
+            @include rhythm(5,0,0,1,100px);
         }
     }
     &-yellow {
@@ -44,29 +46,33 @@
     &-text {
         display: none;
         width: 100%;
+        clear: both;
         font-family: $Fabrica;
         color: $white;
         text-align: center;
         @extend %medium-font;
         @include susy-breakpoint($bp-medium, $columns-medium) {
-            display: inline-block;
-            @include rhythm(0,0,0,2,16px);
+            display: block;
+            // @include rhythm(0,0,2,0,16px);
+            margin: 0 0 2em 0;
         }
     }
 }
 
 .bg-phone {
     background: url('images/hero_road_small.jpg') no-repeat left top;
-    background-size: 100%;
-    height: image-height('images/hero_road_small.jpg');
+    background-size: cover;
+    // height: image-height('images/hero_road_small.jpg');
 }
 .bg-tablet {
     background: url('images/hero_road_medium.jpg') no-repeat left top;
-    background-size: 100%;
-    height: image-height('images/hero_road_medium.jpg');
+    background-size: cover;
+    // height: image-height('images/hero_road_medium.jpg');
 }
 .bg-computer {
     background: url('images/hero_road_large.jpg') no-repeat left top;
-    background-size: 100%;
-    height: image-height('images/hero_road_large.jpg');
+    // background-size: 100%;
+    background-size: cover;
+    // height: auto;
+    // height: image-height('images/hero_road_large.jpg');
 }

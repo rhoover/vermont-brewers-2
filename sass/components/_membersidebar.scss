@@ -6,10 +6,14 @@
         display: block;
         @include span(5 of 16);
         @include squish(1,0);
+        padding-left: 0px;
+        padding-right: 0px;
     }
     @include susy-breakpoint($bp-large,$columns-large) {
         @include span(5 of 24);
         @include squish(2,0);
+        padding-left: 0px;
+        padding-right: 0px;
     }
     &-item {
         @extend %small-font;

@@ -1,6 +1,6 @@
 .nav-menu {
     position: fixed;
-    height: 100%;
+    min-height: 100%;
     top: rhythm(2.1, 16px);
     @include translate3d(-100%, 0, 0);
     @include transition(all 0.75s cubic-bezier(0.250, 0.460, 0.450, 0.940));
@@ -9,13 +9,16 @@
     background-color: #EEEEEE;
     @include background-image($mobile-nav-gradient);
     border-right: .1em solid rgba($darkgreen, .5);
+    @include susy-breakpoint($bp-medium,$columns-medium) {
+        top: rhythm(2.7, 16px);
+    }
     @include susy-breakpoint($bp-large, $columns-large) {
         top: 0px;
-        height: auto;
-        width: 100%;
+        min-height: auto;
+        right: 0px;
         @include translate3d(0, 0, 0);
         @include rhythm(1.5,0,.5,0,16px);
-        padding-right: gutter()*2;
+        padding-right: rhythm(.25, 16px);
         padding-left: 0px;
         text-align: right;
         background-color: transparent;
@@ -26,7 +29,7 @@
 
 .menu-item {
     display: block;
-    padding: rhythm(.75, 16px) span(2 of 12);
+    padding: rhythm(.5, 16px) span(2 of 12);
     font-family: $Fabrica;
     text-decoration: none;
     color: $yellow;
@@ -35,8 +38,8 @@
     border-bottom: .1em solid rgba(darken($darkgreen, 15%), .5);
     @include susy-breakpoint($bp-large, $columns-large) {
         display: inline-block;
-        margin: 0px 0px 0px gutter();
-        padding: 0%;
+        margin: 0px;
+        padding: 0 rhythm(.25, 16px);
         border-bottom: none;
         &:hover {
             text-decoration: underline;

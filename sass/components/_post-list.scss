@@ -1,0 +1,9 @@
+.post-list {
+    @extend %innersections;
+    &-title {
+        color: $green;
+        &:hover {
+            color: $darkgreen;
+        }
+    }
+}

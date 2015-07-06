@@ -67,6 +67,7 @@ module.exports = function (grunt) {
                     dest: '<%=vbav2.production %>',
                     src: [
                         '*.php',
+                        'template-parts/*.php',
                         // 'inc/*', //solved by tweaking functions.php
                         // 'languages/*', //solved by tweaking functions.php
                         // 'style.css',

@@ -1,0 +1,20 @@
+.single-post {
+    &-header {
+        @extend %innersections;
+        border-bottom: .1em solid rgba($lightgreen, .75);
+        margin-bottom: rhythm(1, 16px);
+    }
+    &-title {
+        @include typeSize(large);
+        color: $black;
+        margin-bottom: 0px;
+    }
+    &-time {
+        @include typeSize(small);
+        color: rgba($lightgreen, .5);;
+    }
+    &-content {
+        @extend %innersections;
+        border-top: none;
+    }
+}

@@ -3,4 +3,5 @@ body {
     @include susy-breakpoint($bp-large, $columns-large);
     @include container;
     height: 100%;
+    background: rgba($yellow, 0.1);
 }

@@ -1,0 +1,20 @@
+.comments {
+    &-area {
+        @extend %innersections;
+        border-top: none;
+    }
+    &-title {
+        margin-bottom: rhythm(1, 16px);
+    }
+}
+
+.comment {
+    &-list {
+        &>li {
+            margin-bottom: rhythm(1, 16px);
+        }
+    }
+    &-content {
+        padding: rhythm(.25, 16px) rhythm(1, 16px);
+    }
+}
