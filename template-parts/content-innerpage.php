@@ -7,8 +7,5 @@
 ?>
 
 <article class="innerpage" >
-    <h3 class="post-title">
-        <?php the_title(); ?>
-    </h3>
     <?php the_content(); ?>
 </article>

@@ -35,6 +35,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @import "helpers/wp-images";
 
 @import "components/body";
+@import "components/buttons";
 @import "components/header";
 @import "components/nav";
 @import "components/hero";
@@ -48,3 +49,4 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @import "components/single-post";
 @import "components/comments";
 @import "components/footer";
+@import "components/wp-image-alignment.scss";

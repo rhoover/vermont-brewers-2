@@ -17,4 +17,44 @@
     &-content {
         padding: rhythm(.25, 16px) rhythm(1, 16px);
     }
+    &-metadata {
+        &>a {
+            @include typeSize(small);
+            text-decoration: none;
+            color: rgba($lightgreen, .5);
+        }
+    }
+    &-reply-link {
+        color: $lightgreen;
+        &:hover {
+            color: $green;
+        }
+    }
+    &-reply-title {
+        border-bottom: .1em solid rgba($lightgreen, .5);
+        margin-bottom: rhythm(1, 16px);
+    }
+    &-form {
+        &>p {
+            margin-bottom: rhythm(1, 16px);
+        }
+    }
+}
+
+.fn {
+    &>a {
+        color: $lightgreen;
+        &:hover {
+            color: $green;
+        }
+    }
+}
+
+#comment {
+    max-width: 100%;
+}
+
+.form-allowed-tags {
+    @include typeSize(small);
+    color: rgba($black, .75);
 }

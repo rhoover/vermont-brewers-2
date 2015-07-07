@@ -10,7 +10,7 @@
     @include background-image($mobile-nav-gradient);
     border-right: .1em solid rgba($darkgreen, .5);
     @include susy-breakpoint($bp-medium,$columns-medium) {
-        top: rhythm(2.7, 16px);
+        top: rhythm(2.6, 16px);
     }
     @include susy-breakpoint($bp-large, $columns-large) {
         top: 0px;

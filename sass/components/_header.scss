@@ -37,12 +37,13 @@
 .big-screen-title {
     display: none;
     font-family: $Fabrica;
-    @extend %large-font;
+    @extend %base-font;
     @extend %weight-strong;
     @include susy-breakpoint($bp-medium,$columns-medium) {
         display: inline-block;
+        @include typeSize(large);
         @include span(8);
-        @include rhythm(.25,0,0,.25,16px);
+        @include rhythm(.75,0,0,.75,16px);
         text-align: center;
         cursor: pointer;
         a {
