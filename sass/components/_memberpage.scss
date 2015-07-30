@@ -11,6 +11,7 @@
             padding-left: 0;
         }
         &-primary {
+            padding: rhythm(1, 16px) 0 0 0;
             @include susy-breakpoint($bp-medium,$columns-medium) {
                 @include span(6 of 6);
                 padding: 0;
@@ -117,7 +118,7 @@
     &-map {
         @include span(12 of 12);
         position: fixed;
-        top: 3em;
+        top: 6.6em;
         right: 100%;
         padding: 0;
         @include transition(all 0.75s cubic-bezier(0.250, 0.460, 0.450, 0.940));
@@ -140,6 +141,7 @@
             font-family: $Fabrica;
             color: $darkgreen;
             background-color: rgba($black, .15);
+            border-top: .1em solid rgba($black,.4);
             border-bottom: .1em solid rgba($black,.4);
             border-top: .1em solid rgba($black,.4);
             @include susy-breakpoint($bp-large,$columns-large) {

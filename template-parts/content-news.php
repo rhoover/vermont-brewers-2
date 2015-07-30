@@ -11,8 +11,6 @@ Template Name: NewsEvents
 
 <?php get_template_part('template-parts/content-membersidebar'); ?>
 
-<!-- <section> -->
-
         <?php
         $temp = $wp_query; $wp_query= null;
         $wp_query = new WP_Query(); $wp_query->query('showposts=10' . '&paged='.$paged);
@@ -41,7 +39,5 @@ Template Name: NewsEvents
         <?php } ?>
 
         <?php wp_reset_postdata(); ?>
-
-    <!-- </section> -->
 
 <?php get_footer(); ?>

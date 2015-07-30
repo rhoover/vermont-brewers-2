@@ -33,7 +33,7 @@
     font-family: $Fabrica;
     text-decoration: none;
     color: $yellow;
-    @extend %base-font;
+    @extend %small-font;
     @extend %weight-light;
     border-bottom: .1em solid rgba(darken($darkgreen, 15%), .5);
     @include susy-breakpoint($bp-large, $columns-large) {

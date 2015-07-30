@@ -7,7 +7,7 @@
 ?>
 
 <section class="member-sidebar" <?php echo "ng-controller=\"MemberListCtrl\" "; ?> >
-    <a href="http://vbav2/{{member.selector}}" class="member-sidebar-item" ng-repeat="member in memberList">
+    <a href="http://vbav2/{{member.selector}}" class="member-sidebar-item" ng-repeat="member in memberList | orderBy: 'selector' ">
         <div class="member-sidebar-image VBA40-{{member.selector}}"></div>
         <p  class="member-sidebar-name" >{{member.name}}</p>
     </a>

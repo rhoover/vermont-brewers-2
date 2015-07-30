@@ -24,11 +24,12 @@ angular.module('vbaV2App')
 
                             infoContent = '<p>'+aml.name+'</p>'+
                             '<p>'+aml.address+'</p>'+
-                            '<p>'+aml.city+', '+aml.state+'</p>';
+                            '<p>'+aml.city+', '+aml.state+'</p>' +
+                             '<a href="http://vermontbrewers.com/'+aml.selector+' ">Go To Listing</a>';
 
                             infowindow = googleMap.infoWindowCreator(infoContent);
 
-                            googleMap.infoWindowsClick(map, marker, infowindow);
+                            googleMap.infoWindowsClick(map, marker, infowindow, infoContent);
                         } //end for loop
                     }, 300); //end $timeout
                 } //end return function

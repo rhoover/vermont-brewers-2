@@ -1,0 +1,56 @@
+// $tours-layout: smart;
+$tours-sprite-dimensions: true;
+@import "tours/*.png";
+$tours-spacing: 50px;
+@include all-tours-sprites;
+
+.tours-mount-major {
+    display: inline-block;
+    margin: rhythm(1,16px) 0;
+    text-indent: -2000px;
+    text-align: left;
+    overflow: hidden;
+    @include susy-breakpoint($bp-large, $columns-large) {
+        margin: rhythm(1,16px) rhythm(1, 16px)*2;
+    }
+}
+.tours-burlington {
+    display: inline-block;
+    margin: rhythm(1,16px) 0;
+    text-indent: -2000px;
+    text-align: left;
+    overflow: hidden;
+    @include susy-breakpoint($bp-large, $columns-large) {
+        margin: rhythm(1,16px) rhythm(1, 16px)*2;
+    }
+}
+.tours-good-bus {
+    display: inline-block;
+    margin: rhythm(1,16px) 0;
+    text-indent: -2000px;
+    text-align: left;
+    overflow: hidden;
+    @include susy-breakpoint($bp-large, $columns-large) {
+        margin: rhythm(1,16px) rhythm(1, 16px)*2;
+    }
+}
+.tours-tourery {
+    display: inline-block;
+    margin: rhythm(1,16px) 0;
+    text-indent: -2000px;
+    text-align: left;
+    overflow: hidden;
+    @include susy-breakpoint($bp-large, $columns-large) {
+        margin: rhythm(1,16px) rhythm(1, 16px)*2;
+    }
+}
+.tours-backroadtours {
+    display: inline-block;
+    margin: rhythm(1,16px) 0;
+    text-indent: -2000px;
+    text-align: left;
+    overflow: hidden;
+    @include susy-breakpoint($bp-large, $columns-large) {
+        margin: rhythm(1,16px) rhythm(1, 16px)*2;
+    }
+}

@@ -1,0 +1,29 @@
+.fourofour {
+    &-header {
+        @extend %innersections;
+    }
+    &-warning {
+        @extend %innersections;
+        border-top: none;
+        border-bottom: none;
+        &:last-of-type {
+            border-bottom: none;
+        }
+    }
+}
+
+.search-form {
+    @extend %innersections;
+}
+
+.widget_recent_entries {
+    @extend %innersections;
+    border-top: none;
+    &>ul>li>a {
+        text-decoration: none;
+        color: $lightgreen;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

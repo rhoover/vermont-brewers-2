@@ -19,6 +19,7 @@ angular.module('vbaV2App')
 
             //below pattern is for a service that returns a promise
             memberjson.getMemberData().then(function (data) {
+
                 $scope.memberList = data;
 
                 $scope.$emit('LOADED');
