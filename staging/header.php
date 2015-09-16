@@ -61,6 +61,9 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
+<!-- Modernizr -->
+<script src="http://www.vermontbrewers.com/wp-content/themes/vbav2/js/libraries/modernizr-min.js"></script>
+
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen, projection" />
 
 <?php wp_head(); ?>
