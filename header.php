@@ -11,11 +11,12 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 
-<title><?php global $page, $paged; wp_title( '|', true, 'right' );?></title>
+<!-- <title><?php global $page, $paged; wp_title( '|', true, 'right' );?></title> -->
+<title><?php wp_title('&raquo;','true','right'); ?><?php bloginfo('name'); ?></title>
 
 <!-- generic -->
 <meta name="description" content="The Vermont Brewers Association - Small State - Big Beer">
-<meta name="author" content="MooseDog Studios - Robin Hoover - Stowe, VT - www.moosedog.io">
+<meta name="author" content="The Vermont Brewers Association - Small State - Big Beer">
 <meta name='robots' content='index,follow'>
 
 <!-- Mobile Stuff -->
@@ -45,8 +46,8 @@
 <meta property="og:url" content="http://www.vermontbrewers.com"/>
 <meta property="og:site_name" content="The Vermont Brewers Association - Small State - Big Beer"/>
 <meta property="og:description" content="Proud To Support Vermont's Craft Brewers"/>
-<meta property="og:email" content="info@vermontbrewers.com"/>
-<meta property="og:phone_number" content="802-885-1262"/>
+<meta property="og:email" content="melissa.corbin@vermontbrewers.com"/>
+<meta property="og:phone_number" content="802-310-6942"/>
 
 <!-- icons -->
 <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.ico">
@@ -84,6 +85,7 @@
         //courtesy of:  http://zoerooney.com/blog/tutorials/removing-list-items-wordpress-menus/
         //combine with addition to functions.php and tweaked by yours truly
         // first let's get our nav menu using the regular wp_nav_menu() function with special parameters
+        // check out: https://css-tricks.com/the-wordpress-nav-walker-class-a-guided-var_dump/ for a different/vaguely similar approach
         $cleanermenu = wp_nav_menu( array(
             'theme_location' => 'navmenu', // we've registered a theme location in functions.php
             'container' => false, // this is usually a div outside the menu ul, we don't need it hence false

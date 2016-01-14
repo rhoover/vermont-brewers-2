@@ -56,18 +56,20 @@
         }
     }
     @include susy-breakpoint($bp-large,$columns-large) {
-        @include span(11);
+        @include span(14);
         @include rhythm(.5,0,0,.5,16px);
         text-align: left;
+        padding-left: image-width("images/vba-logo-new.png") + 25px;
         &:before {
             content: "";
             display: block;
-            float: left;
-            width: image-width("images/vba-logo-final-web.png");
-            height: image-height("images/vba-logo-final-web.png");
-            margin-right: span(1);
-            margin-top: rhythm(.25,16px);
-            background: url("images/vba-logo-final-web.png") no-repeat;
+            position: absolute;
+            top: 0;
+            left: span(.25 of 24);
+            overflow: auto;
+            width: image-width("images/vba-logo-new.png");
+            height: image-height("images/vba-logo-new.png");
+            background: url("images/vba-logo-new.png") no-repeat;
         }
     }
 }

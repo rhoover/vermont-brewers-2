@@ -62,4 +62,11 @@
     @include susy-breakpoint($bp-medium, $columns-medium) {
         padding: 2em 0 2em 0;
     }
+    &-link {
+        text-decoration: none;
+        color: $lightgreen;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
