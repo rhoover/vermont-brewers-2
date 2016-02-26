@@ -31,7 +31,7 @@
     <script src="http://www.vermontbrewers.com/wp-content/themes/vbav2/js/libraries/92459ad6.all-angular.min.js"></script>
 
     <!-- Grab VBA Angular Script -->
-    <script src="http://www.vermontbrewers.com/wp-content/themes/vbav2/js/vbaV2/ee11cbd9.vbav2.min.js"></script>
+    <script src="http://www.vermontbrewers.com/wp-content/themes/vbav2/js/vbaV2/f52965f9.vbav2.min.js"></script>
 
 
     <!-- Grab Google Analytics -->

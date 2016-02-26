@@ -31,6 +31,7 @@
     <script src="/wp-content/themes/vbav2/js/libraries/angular/angular.js"></script>
     <script src="/wp-content/themes/vbav2/js/libraries/angular-animate/angular-animate.js"></script>
     <script src="/wp-content/themes/vbav2/js/libraries/angular-touch/angular-touch.js"></script>
+    <!-- <script src="http://www.vermontbrewers.com/wp-content/themes/vbav2/js/libraries/92459ad6.all-angular.min.js"></script> -->
 
     <!-- Grab VBA Angular Script -->
     <script src="/wp-content/themes/vbav2/js/vbaV2/app.js"></script>
@@ -50,6 +51,7 @@
     <script src="/wp-content/themes/vbav2/js/vbaV2/directives/showsocial.js"></script>
     <script src="/wp-content/themes/vbav2/js/vbaV2/directives/membermap.js"></script>
     <script src="/wp-content/themes/vbav2/js/vbaV2/directives/allmembermap.js"></script>
+    <!-- <script src="http://www.vermontbrewers.com/wp-content/themes/vbav2/js/vbaV2/f52965f9.vbav2.min.js"></script> -->
 
 
     <!-- Grab Google Analytics -->

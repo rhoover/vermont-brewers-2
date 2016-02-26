@@ -8,7 +8,8 @@
 
 <section  class="frontpage" <?php echo "data-home-gallery ng-controller=\"MemberListCtrl\""; ?>  >
 
-<a class="frontpage-member" href="http://vbav2/{{member.selector}}" ng-repeat="member in memberList | orderBy: 'selector' ">
+<!-- <a class="frontpage-member" href="http://vbav2/{{member.selector}}" ng-repeat="member in memberList | orderBy: 'selector' "> -->
+<a class="frontpage-member" href="<?php echo esc_url( home_url( '/' ) ); ?>{{member.selector}}" ng-repeat="member in memberList | orderBy: 'selector' ">
     <h4 class="frontpage-member-title" itemprop="member">{{member.name}}</h4>
     <p class="frontpage-member-address">{{member.city}}, VT</p>
     <div class="frontpage-member-logo VBA100-{{member.selector}}"></div>
