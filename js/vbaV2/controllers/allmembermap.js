@@ -24,8 +24,10 @@ angular.module('vbaV2App')
                 // $scope.member = appdataFilter(data, memberSelector);
 
                 $scope.$emit('LOADED');
+                $scope.members = data;
 
                 storageService.save('vba-membership-cache', data);
+                console.log('JSON Stored');
 
             });
         }; //end if-else
