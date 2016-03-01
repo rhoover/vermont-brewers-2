@@ -111,18 +111,7 @@ html {
   }
 }
 
-.herobanner-header {
-  font-size: 1.3125em;
-  line-height: 1.5234286em;
-}
-@media (min-width: 54em) {
-  .herobanner-header {
-    font-size: 1.75em;
-    line-height: 1.5231429em;
-  }
-}
-
-.mobile-screen-title, .big-screen-title, .herobanner-header {
+.mobile-screen-title, .big-screen-title {
   font-weight: 700;
 }
 
@@ -946,10 +935,10 @@ input[type="submit"] {
     float: left;
     padding-left: 0.7230015%;
     padding-right: 0.7230015%;
-    margin-top: 1.125em;
+    margin-top: 0.375em;
     padding-top: 0em;
     padding-bottom: 0em;
-    margin-bottom: 1.125em;
+    margin-bottom: 0.375em;
     text-align: center;
     cursor: pointer;
   }
@@ -1123,62 +1112,12 @@ input[type="submit"] {
 }
 @media (min-width: 54em) {
   .herobanner {
-    top: 3em;
+    top: 3.9em;
   }
 }
 @media (min-width: 75em) {
   .herobanner {
-    top: 4.5em;
-  }
-}
-.herobanner-header {
-  width: 100%;
-  clear: both;
-  margin-top: 0.6857143em;
-  padding-top: 0em;
-  padding-bottom: 0em;
-  margin-bottom: 1.1428571em;
-  text-align: center;
-  border-top: 0.01em solid rgba(55, 55, 55, 0.75);
-  border-bottom: 0.01em solid rgba(55, 55, 55, 0.75);
-  background-color: rgba(55, 55, 55, 0.35);
-}
-@media (min-width: 54em) {
-  .herobanner-header {
-    font-size: 5em;
-    line-height: 1.05em;
-    margin-top: 0.3em;
-    padding-top: 0em;
-    padding-bottom: 0em;
-    margin-bottom: 0.3em;
-  }
-}
-@media (min-width: 75em) {
-  .herobanner-header {
-    font-size: 6.25em;
-    line-height: 1.08em;
-    margin-top: 1.2em;
-    padding-top: 0em;
-    padding-bottom: 0em;
-    margin-bottom: 0.24em;
-  }
-}
-.herobanner-yellow {
-  color: rgba(248, 245, 240, 0.8);
-}
-@media (min-width: 54em) {
-  .herobanner-yellow {
-    color: #beaa77;
-    text-shadow: rgba(55, 55, 55, 0.9) 0 0 0.02em;
-  }
-}
-.herobanner-green {
-  color: rgba(248, 245, 240, 0.8);
-}
-@media (min-width: 54em) {
-  .herobanner-green {
-    color: #003e0f;
-    text-shadow: rgba(248, 245, 240, 0.3) 0 0 0.02em;
+    top: 5.325em;
   }
 }
 .herobanner-text {
@@ -1192,29 +1131,42 @@ input[type="submit"] {
 @media (min-width: 54em) {
   .herobanner-text {
     display: block;
-    margin: 0 0 2em 0;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    padding: .5em 0;
+    border-top: 0.1em solid rgba(55, 55, 55, 0.75);
+    border-bottom: 0.1em solid rgba(55, 55, 55, 0.75);
+    background-color: rgba(55, 55, 55, 0.65);
+  }
+}
+@media (min-width: 75em) {
+  .herobanner-text {
+    margin-top: 12em;
+    margin-bottom: 2em;
   }
 }
 
 .bg-phone {
-  background: url("images/hero_road_small.jpg") no-repeat left top;
+  height: 150px;
+  background: url("images/hero-taps-small.jpg") no-repeat left top;
   background-size: cover;
 }
 
 .bg-tablet {
-  background: url("images/hero_road_medium.jpg") no-repeat left top;
+  height: 250px;
+  background: url("images/hero-taps-medium.jpg") no-repeat left top;
   background-size: cover;
 }
 
 .bg-computer {
-  background: url("images/hero_road_large.jpg") no-repeat left top;
+  background: url("images/hero-taps-large.jpg") no-repeat left top;
   background-size: cover;
 }
 
 .content {
   overflow: hidden;
   *zoom: 1;
-  margin-top: 6.75em;
+  margin-top: 12.75em;
   position: relative;
   background-image: linear-gradient(45deg, rgba(190, 170, 119, 0.05) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 75%, rgba(190, 170, 119, 0.05) 75%, rgba(190, 170, 119, 0.05)), linear-gradient(45deg, rgba(190, 170, 119, 0.05) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 75%, rgba(190, 170, 119, 0.05) 75%, rgba(190, 170, 119, 0.05));
   background-size: .4em .4em, .4em .4em;

@@ -5,44 +5,44 @@
     position: fixed;
     top: rhythm(2.1, 16px);
     @include susy-breakpoint($bp-medium, $columns-medium) {
-        top: rhythm(2, 16px);
+        top: rhythm(2.6, 16px);
     }
     @include susy-breakpoint($bp-large, $columns-large) {
-        top: rhythm(3, 16px);
+        top: rhythm(3.55, 16px);
     }
-    &-header {
-        width: 100%;
-        clear: both;
-        @extend %large-font;
-        @extend %weight-strong;
-        @include rhythm(.6,0,0,1,21px);
-        text-align: center;
-        border-top: .01em solid rgba($black, .75);
-        border-bottom: .01em solid rgba($black, .75);
-        background-color: rgba($black, .35);
-        @include susy-breakpoint($bp-medium, $columns-medium) {
-            @include adjust-font-size-to(80px);
-            @include rhythm(1,0,0,1,80px);
-        }
-        @include susy-breakpoint($bp-large, $columns-large) {
-            @include adjust-font-size-to(100px);
-            @include rhythm(5,0,0,1,100px);
-        }
-    }
-    &-yellow {
-        color: rgba($white, .8);
-        @include susy-breakpoint($bp-medium, $columns-medium) {
-            color: $yellow;
-            text-shadow: rgba($black,0.9) 0 0 0.02em;
-        }
-    }
-    &-green {
-        color: rgba($white, .8);
-        @include susy-breakpoint($bp-medium, $columns-medium) {
-            color: darken($green, 2%);
-            text-shadow: rgba($white,0.3) 0 0 0.02em;
-        }
-    }
+    // &-header {
+    //     width: 100%;
+    //     clear: both;
+    //     @extend %large-font;
+    //     @extend %weight-strong;
+    //     @include rhythm(.6,0,0,1,21px);
+    //     text-align: center;
+    //     border-top: .01em solid rgba($black, .75);
+    //     border-bottom: .01em solid rgba($black, .75);
+    //     background-color: rgba($black, .35);
+    //     @include susy-breakpoint($bp-medium, $columns-medium) {
+    //         @include adjust-font-size-to(80px);
+    //         @include rhythm(1,0,0,1,80px);
+    //     }
+    //     @include susy-breakpoint($bp-large, $columns-large) {
+    //         @include adjust-font-size-to(100px);
+    //         @include rhythm(5,0,0,1,100px);
+    //     }
+    // }
+    // &-yellow {
+    //     color: rgba($white, .8);
+    //     @include susy-breakpoint($bp-medium, $columns-medium) {
+    //         color: $yellow;
+    //         text-shadow: rgba($black,0.9) 0 0 0.02em;
+    //     }
+    // }
+    // &-green {
+    //     color: rgba($white, .8);
+    //     @include susy-breakpoint($bp-medium, $columns-medium) {
+    //         color: darken($green, 2%);
+    //         text-shadow: rgba($white,0.3) 0 0 0.02em;
+    //     }
+    // }
     &-text {
         display: none;
         width: 100%;
@@ -53,24 +53,43 @@
         @extend %medium-font;
         @include susy-breakpoint($bp-medium, $columns-medium) {
             display: block;
-            // @include rhythm(0,0,2,0,16px);
-            margin: 0 0 2em 0;
+            margin-top: 3em;
+            margin-bottom: 1em;
+            padding: .5em 0;
+            border-top: 0.1em solid rgba($black, 0.75);
+            border-bottom: 0.1em solid rgba($black, 0.75);
+            background-color: rgba($black, .65);
+        }
+        @include susy-breakpoint($bp-large, $columns-large) {
+            margin-top: 12em;
+            margin-bottom: 2em;
+            // padding: .5em 0;
+            // border-top: 0.1em solid rgba($black, 0.75);
+            // border-bottom: 0.1em solid rgba($black, 0.75);
+            // background-color: rgba($black, .65);
         }
     }
 }
 
 .bg-phone {
-    background: url('images/hero_road_small.jpg') no-repeat left top;
+    // background: url('images/hero_road_small.jpg') no-repeat left top;
+    height: 150px;
+    // width: 100%;
+    background: url('images/hero-taps-small.jpg') no-repeat left top;
     background-size: cover;
     // height: image-height('images/hero_road_small.jpg');
 }
 .bg-tablet {
-    background: url('images/hero_road_medium.jpg') no-repeat left top;
+    // background: url('images/hero_road_medium.jpg') no-repeat left top;
+    height: 250px;
+    // width: 100%;
+    background: url('images/hero-taps-medium.jpg') no-repeat left top;
     background-size: cover;
     // height: image-height('images/hero_road_medium.jpg');
 }
 .bg-computer {
-    background: url('images/hero_road_large.jpg') no-repeat left top;
+    // background: url('images/hero_road_large.jpg') no-repeat left top;
+    background: url('images/hero-taps-large.jpg') no-repeat left top;
     // background-size: 100%;
     background-size: cover;
     // height: auto;
