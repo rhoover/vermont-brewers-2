@@ -56,8 +56,8 @@
             margin-top: 3em;
             margin-bottom: 1em;
             padding: .5em 0;
-            border-top: 0.1em solid rgba($black, 0.75);
-            border-bottom: 0.1em solid rgba($black, 0.75);
+            border-top: 0.1em solid rgba($black, 0.95);
+            border-bottom: 0.1em solid rgba($black, 0.95);
             background-color: rgba($black, .65);
         }
         @include susy-breakpoint($bp-large, $columns-large) {

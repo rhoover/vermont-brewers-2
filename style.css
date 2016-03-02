@@ -1134,8 +1134,8 @@ input[type="submit"] {
     margin-top: 3em;
     margin-bottom: 1em;
     padding: .5em 0;
-    border-top: 0.1em solid rgba(55, 55, 55, 0.75);
-    border-bottom: 0.1em solid rgba(55, 55, 55, 0.75);
+    border-top: 0.1em solid rgba(55, 55, 55, 0.95);
+    border-bottom: 0.1em solid rgba(55, 55, 55, 0.95);
     background-color: rgba(55, 55, 55, 0.65);
   }
 }
