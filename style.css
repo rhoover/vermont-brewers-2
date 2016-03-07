@@ -789,8 +789,8 @@ p {
   width: 43px;
 }
 
-.social-sprite, .social-facebook, .social-google, .social-site, .social-twitter, .social-vbt {
-  background-image: url('images/social-s5f70302ffa.png');
+.social-sprite, .social-facebook, .social-google, .social-instagram, .social-site, .social-twitter {
+  background-image: url('images/social-s7580e7c8e6.png');
   background-repeat: no-repeat;
 }
 
@@ -806,19 +806,19 @@ p {
   width: 48px;
 }
 
-.social-site {
+.social-instagram {
   background-position: 0 -96px;
   height: 48px;
   width: 48px;
 }
 
-.social-twitter {
+.social-site {
   background-position: 0 -144px;
   height: 48px;
   width: 48px;
 }
 
-.social-vbt {
+.social-twitter {
   background-position: 0 -192px;
   height: 48px;
   width: 48px;

@@ -102,7 +102,7 @@
     ?><!-- end .nav-menu -->
 
     <section class="herobanner" data-banner-image>
-        <h2 class="herobanner-header"><span class="herobanner-yellow">small state.</span><span class="herobanner-green"> BIG BEER.</span></h2>
+        <!-- <h2 class="herobanner-header"><span class="herobanner-yellow">small state.</span><span class="herobanner-green"> BIG BEER.</span></h2> -->
         <p class="herobanner-text">Maybe there's something in the water. Maybe there's something in the air.<br />Maybe..... there's something up here in the mountains.<br />Vermont's brewers are making magic with it.</p>
     </section><!-- end .hero-banner -->
 
