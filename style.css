@@ -263,8 +263,8 @@ p {
   }
 }
 
-.VBA100-sprite, .VBA100-alchemist, .VBA100-backacrebeer, .VBA100-benthill, .VBA100-bobcat, .VBA100-burlington, .VBA100-coveredbridge, .VBA100-cropbistro, .VBA100-dropin, .VBA100-fiddlehead, .VBA100-firstrepublic, .VBA100-foleybrothers, .VBA100-fourquarters, .VBA100-fourteenthstar, .VBA100-frostbeer, .VBA100-gratefulhands, .VBA100-harpoon, .VBA100-hermitthrush, .VBA100-hillfarmstead, .VBA100-hopnmoose, .VBA100-idletyme, .VBA100-jville, .VBA100-kingdombrewing, .VBA100-lawsons, .VBA100-longtrail, .VBA100-lostnationbrewing, .VBA100-madison, .VBA100-magichat, .VBA100-mcneills, .VBA100-northshire, .VBA100-norwichinn, .VBA100-ottercreek, .VBA100-perfectpear, .VBA100-propig, .VBA100-queencity, .VBA100-rockart, .VBA100-simpleroots, .VBA100-stonecorral, .VBA100-switchback, .VBA100-threeneeds, .VBA100-trappfamily, .VBA100-troutriver, .VBA100-vpb, .VBA100-whetstonestation, .VBA100-zerogravity {
-  background-image: url('images/VBA100-sae6aeeb23d.png');
+.VBA100-sprite, .VBA100-alchemist, .VBA100-backacrebeer, .VBA100-benthill, .VBA100-bobcat, .VBA100-brewsterriver, .VBA100-burlington, .VBA100-coveredbridge, .VBA100-cropbistro, .VBA100-dropin, .VBA100-fiddlehead, .VBA100-firstrepublic, .VBA100-foambrewers, .VBA100-foleybrothers, .VBA100-fourquarters, .VBA100-fourteenthstar, .VBA100-frostbeer, .VBA100-goodwater, .VBA100-gratefulhands, .VBA100-harpoon, .VBA100-hermitthrush, .VBA100-hillfarmstead, .VBA100-hopnmoose, .VBA100-idletyme, .VBA100-jville, .VBA100-kingdombrewing, .VBA100-lawsons, .VBA100-longtrail, .VBA100-lostnationbrewing, .VBA100-madison, .VBA100-magichat, .VBA100-mcneills, .VBA100-northshire, .VBA100-norwichinn, .VBA100-ottercreek, .VBA100-perfectpear, .VBA100-propig, .VBA100-queencity, .VBA100-rockart, .VBA100-simpleroots, .VBA100-stonecorral, .VBA100-switchback, .VBA100-threeneeds, .VBA100-trappfamily, .VBA100-troutriver, .VBA100-vpb, .VBA100-whetstonestation, .VBA100-zerogravity {
+  background-image: url('images/VBA100-s3f52393d55.png');
   background-repeat: no-repeat;
 }
 
@@ -292,248 +292,266 @@ p {
   width: 100px;
 }
 
-.VBA100-burlington {
+.VBA100-brewsterriver {
   background-position: -32px -400px;
   height: 100px;
   width: 100px;
 }
 
-.VBA100-coveredbridge {
+.VBA100-burlington {
   background-position: -32px -500px;
   height: 100px;
   width: 100px;
 }
 
+.VBA100-coveredbridge {
+  background-position: -32px -600px;
+  height: 100px;
+  width: 100px;
+}
+
 .VBA100-cropbistro {
-  background-position: -1px -600px;
+  background-position: -1px -700px;
   height: 100px;
   width: 162px;
 }
 
 .VBA100-dropin {
-  background-position: -30px -700px;
+  background-position: -30px -800px;
   height: 100px;
   width: 104px;
 }
 
 .VBA100-fiddlehead {
-  background-position: -32px -800px;
+  background-position: -32px -900px;
   height: 94px;
   width: 100px;
 }
 
 .VBA100-firstrepublic {
-  background-position: -32px -894px;
-  height: 100px;
-  width: 100px;
-}
-
-.VBA100-foleybrothers {
   background-position: -32px -994px;
   height: 100px;
   width: 100px;
 }
 
-.VBA100-fourquarters {
+.VBA100-foambrewers {
   background-position: -32px -1094px;
+  height: 64px;
+  width: 100px;
+}
+
+.VBA100-foleybrothers {
+  background-position: -32px -1158px;
+  height: 100px;
+  width: 100px;
+}
+
+.VBA100-fourquarters {
+  background-position: -32px -1258px;
   height: 100px;
   width: 100px;
 }
 
 .VBA100-fourteenthstar {
-  background-position: -19px -1194px;
+  background-position: -19px -1358px;
   height: 100px;
   width: 126px;
 }
 
 .VBA100-frostbeer {
-  background-position: -32px -1294px;
+  background-position: -32px -1458px;
+  height: 100px;
+  width: 100px;
+}
+
+.VBA100-goodwater {
+  background-position: -32px -1558px;
   height: 100px;
   width: 100px;
 }
 
 .VBA100-gratefulhands {
-  background-position: -32px -1394px;
+  background-position: -32px -1658px;
   height: 100px;
   width: 100px;
 }
 
 .VBA100-harpoon {
-  background-position: -32px -1494px;
+  background-position: -32px -1758px;
   height: 100px;
   width: 100px;
 }
 
 .VBA100-hermitthrush {
-  background-position: -32px -1594px;
+  background-position: -32px -1858px;
   height: 119px;
   width: 100px;
 }
 
 .VBA100-hillfarmstead {
-  background-position: -28px -1713px;
+  background-position: -28px -1977px;
   height: 100px;
   width: 108px;
 }
 
 .VBA100-hopnmoose {
-  background-position: -32px -1813px;
+  background-position: -32px -2077px;
   height: 100px;
   width: 100px;
 }
 
 .VBA100-idletyme {
-  background-position: -32px -1913px;
+  background-position: -32px -2177px;
   height: 100px;
   width: 100px;
 }
 
 .VBA100-jville {
-  background-position: -32px -2013px;
+  background-position: -32px -2277px;
   height: 100px;
   width: 100px;
 }
 
 .VBA100-kingdombrewing {
-  background-position: -32px -2113px;
+  background-position: -32px -2377px;
   height: 100px;
   width: 100px;
 }
 
 .VBA100-lawsons {
-  background-position: 0 -2213px;
+  background-position: 0 -2477px;
   height: 100px;
   width: 164px;
 }
 
 .VBA100-longtrail {
-  background-position: -8px -2313px;
+  background-position: -8px -2577px;
   height: 100px;
   width: 147px;
 }
 
 .VBA100-lostnationbrewing {
-  background-position: -32px -2413px;
+  background-position: -32px -2677px;
   height: 116px;
   width: 100px;
 }
 
 .VBA100-madison {
-  background-position: -32px -2529px;
+  background-position: -32px -2793px;
   height: 100px;
   width: 100px;
 }
 
 .VBA100-magichat {
-  background-position: -14px -2629px;
+  background-position: -14px -2893px;
   height: 100px;
   width: 135px;
 }
 
 .VBA100-mcneills {
-  background-position: -32px -2729px;
+  background-position: -32px -2993px;
   height: 132px;
   width: 100px;
 }
 
 .VBA100-northshire {
-  background-position: -22px -2861px;
+  background-position: -22px -3125px;
   height: 100px;
   width: 120px;
 }
 
 .VBA100-norwichinn {
-  background-position: -26px -2961px;
+  background-position: -26px -3225px;
   height: 100px;
   width: 112px;
 }
 
 .VBA100-ottercreek {
-  background-position: -33px -3061px;
+  background-position: -33px -3325px;
   height: 100px;
   width: 97px;
 }
 
 .VBA100-perfectpear {
-  background-position: -12px -3161px;
+  background-position: -12px -3425px;
   height: 100px;
   width: 140px;
 }
 
 .VBA100-propig {
-  background-position: -32px -3261px;
+  background-position: -32px -3525px;
   height: 100px;
   width: 100px;
 }
 
 .VBA100-queencity {
-  background-position: -32px -3361px;
+  background-position: -32px -3625px;
   height: 100px;
   width: 100px;
 }
 
 .VBA100-rockart {
-  background-position: -39px -3461px;
+  background-position: -39px -3725px;
   height: 100px;
   width: 85px;
 }
 
 .VBA100-simpleroots {
-  background-position: -32px -3561px;
+  background-position: -32px -3825px;
   height: 100px;
   width: 100px;
 }
 
 .VBA100-stonecorral {
-  background-position: -32px -3661px;
+  background-position: -32px -3925px;
   height: 100px;
   width: 100px;
 }
 
 .VBA100-switchback {
-  background-position: -25px -3761px;
+  background-position: -25px -4025px;
   height: 100px;
   width: 113px;
 }
 
 .VBA100-threeneeds {
-  background-position: -32px -3861px;
+  background-position: -32px -4125px;
   height: 100px;
   width: 100px;
 }
 
 .VBA100-trappfamily {
-  background-position: -32px -3961px;
+  background-position: -32px -4225px;
   height: 100px;
   width: 100px;
 }
 
 .VBA100-troutriver {
-  background-position: -38px -4061px;
+  background-position: -32px -4325px;
   height: 100px;
-  width: 88px;
+  width: 100px;
 }
 
 .VBA100-vpb {
-  background-position: -32px -4161px;
+  background-position: -32px -4425px;
   height: 100px;
   width: 100px;
 }
 
 .VBA100-whetstonestation {
-  background-position: -32px -4261px;
+  background-position: -32px -4525px;
   height: 101px;
   width: 100px;
 }
 
 .VBA100-zerogravity {
-  background-position: -28px -4362px;
+  background-position: -28px -4626px;
   height: 100px;
   width: 107px;
 }
 
-.VBA40-sprite, .VBA40-alchemist, .VBA40-backacrebeer, .VBA40-benthill, .VBA40-bobcat, .VBA40-burlington, .VBA40-coveredbridge, .VBA40-cropbistro, .VBA40-dropin, .VBA40-fiddlehead, .VBA40-firstrepublic, .VBA40-foleybrothers, .VBA40-fourquarters, .VBA40-fourteenthstar, .VBA40-frostbeer, .VBA40-gratefulhands, .VBA40-harpoon, .VBA40-hermitthrush, .VBA40-hillfarmstead, .VBA40-hopnmoose, .VBA40-idletyme, .VBA40-jville, .VBA40-kingdombrewing, .VBA40-lawsons, .VBA40-longtrail, .VBA40-lostnationbrewing, .VBA40-madison, .VBA40-magichat, .VBA40-mcneills, .VBA40-northshire, .VBA40-norwichinn, .VBA40-ottercreek, .VBA40-propig, .VBA40-queencity, .VBA40-rockart, .VBA40-simpleroots, .VBA40-stonecorral, .VBA40-switchback, .VBA40-trappfamily, .VBA40-troutriver, .VBA40-vpb, .VBA40-whetstonestation, .VBA40-zerogravity {
-  background-image: url('images/VBA40-s6b4d90b5ce.png');
+.VBA40-sprite, .VBA40-alchemist, .VBA40-backacrebeer, .VBA40-benthill, .VBA40-bobcat, .VBA40-brewsterriver, .VBA40-burlington, .VBA40-coveredbridge, .VBA40-cropbistro, .VBA40-dropin, .VBA40-fiddlehead, .VBA40-firstrepublic, .VBA40-foambrewers, .VBA40-foleybrothers, .VBA40-fourquarters, .VBA40-fourteenthstar, .VBA40-frostbeer, .VBA40-goodwater, .VBA40-gratefulhands, .VBA40-harpoon, .VBA40-hermitthrush, .VBA40-hillfarmstead, .VBA40-hopnmoose, .VBA40-idletyme, .VBA40-jville, .VBA40-kingdombrewing, .VBA40-lawsons, .VBA40-longtrail, .VBA40-lostnationbrewing, .VBA40-madison, .VBA40-magichat, .VBA40-mcneills, .VBA40-northshire, .VBA40-norwichinn, .VBA40-ottercreek, .VBA40-propig, .VBA40-queencity, .VBA40-rockart, .VBA40-simpleroots, .VBA40-stonecorral, .VBA40-switchback, .VBA40-trappfamily, .VBA40-troutriver, .VBA40-vpb, .VBA40-whetstonestation, .VBA40-zerogravity {
+  background-image: url('images/VBA40-sff4384b416.png');
   background-repeat: no-repeat;
 }
 
@@ -561,230 +579,248 @@ p {
   width: 40px;
 }
 
-.VBA40-burlington {
+.VBA40-brewsterriver {
   background-position: -13px -160px;
   height: 40px;
   width: 40px;
 }
 
-.VBA40-coveredbridge {
+.VBA40-burlington {
   background-position: -13px -200px;
   height: 40px;
   width: 40px;
 }
 
+.VBA40-coveredbridge {
+  background-position: -13px -240px;
+  height: 40px;
+  width: 40px;
+}
+
 .VBA40-cropbistro {
-  background-position: 0 -240px;
+  background-position: 0 -280px;
   height: 40px;
   width: 65px;
 }
 
 .VBA40-dropin {
-  background-position: -12px -280px;
+  background-position: -12px -320px;
   height: 40px;
   width: 42px;
 }
 
 .VBA40-fiddlehead {
-  background-position: -13px -320px;
+  background-position: -13px -360px;
   height: 38px;
   width: 40px;
 }
 
 .VBA40-firstrepublic {
-  background-position: -13px -358px;
-  height: 40px;
-  width: 40px;
-}
-
-.VBA40-foleybrothers {
   background-position: -13px -398px;
   height: 40px;
   width: 40px;
 }
 
+.VBA40-foambrewers {
+  background-position: -13px -438px;
+  height: 26px;
+  width: 40px;
+}
+
+.VBA40-foleybrothers {
+  background-position: -13px -464px;
+  height: 40px;
+  width: 40px;
+}
+
 .VBA40-fourquarters {
-  background-position: -3px -438px;
+  background-position: -3px -504px;
   height: 40px;
   width: 60px;
 }
 
 .VBA40-fourteenthstar {
-  background-position: -8px -478px;
+  background-position: -8px -544px;
   height: 40px;
   width: 50px;
 }
 
 .VBA40-frostbeer {
-  background-position: -13px -518px;
+  background-position: -13px -584px;
+  height: 40px;
+  width: 40px;
+}
+
+.VBA40-goodwater {
+  background-position: -13px -624px;
   height: 40px;
   width: 40px;
 }
 
 .VBA40-gratefulhands {
-  background-position: -13px -558px;
+  background-position: -13px -664px;
   height: 40px;
   width: 40px;
 }
 
 .VBA40-harpoon {
-  background-position: -13px -598px;
+  background-position: -13px -704px;
   height: 40px;
   width: 40px;
 }
 
 .VBA40-hermitthrush {
-  background-position: -13px -638px;
+  background-position: -13px -744px;
   height: 48px;
   width: 40px;
 }
 
 .VBA40-hillfarmstead {
-  background-position: -11px -686px;
+  background-position: -11px -792px;
   height: 40px;
   width: 43px;
 }
 
 .VBA40-hopnmoose {
-  background-position: -13px -726px;
+  background-position: -13px -832px;
   height: 40px;
   width: 40px;
 }
 
 .VBA40-idletyme {
-  background-position: -13px -766px;
+  background-position: -13px -872px;
   height: 40px;
   width: 40px;
 }
 
 .VBA40-jville {
-  background-position: -13px -806px;
+  background-position: -13px -912px;
   height: 40px;
   width: 40px;
 }
 
 .VBA40-kingdombrewing {
-  background-position: -13px -846px;
+  background-position: -13px -952px;
   height: 40px;
   width: 40px;
 }
 
 .VBA40-lawsons {
-  background-position: 0 -886px;
+  background-position: 0 -992px;
   height: 40px;
   width: 66px;
 }
 
 .VBA40-longtrail {
-  background-position: -3px -926px;
+  background-position: -3px -1032px;
   height: 40px;
   width: 59px;
 }
 
 .VBA40-lostnationbrewing {
-  background-position: -13px -966px;
+  background-position: -13px -1072px;
   height: 46px;
   width: 40px;
 }
 
 .VBA40-madison {
-  background-position: -13px -1012px;
+  background-position: -13px -1118px;
   height: 40px;
   width: 40px;
 }
 
 .VBA40-magichat {
-  background-position: -6px -1052px;
+  background-position: -6px -1158px;
   height: 40px;
   width: 54px;
 }
 
 .VBA40-mcneills {
-  background-position: -13px -1092px;
+  background-position: -13px -1198px;
   height: 53px;
   width: 40px;
 }
 
 .VBA40-northshire {
-  background-position: -9px -1145px;
+  background-position: -9px -1251px;
   height: 40px;
   width: 48px;
 }
 
 .VBA40-norwichinn {
-  background-position: -10px -1185px;
+  background-position: -10px -1291px;
   height: 40px;
   width: 45px;
 }
 
 .VBA40-ottercreek {
-  background-position: -13px -1225px;
+  background-position: -13px -1331px;
   height: 40px;
   width: 39px;
 }
 
 .VBA40-propig {
-  background-position: -13px -1265px;
+  background-position: -13px -1371px;
   height: 40px;
   width: 40px;
 }
 
 .VBA40-queencity {
-  background-position: -13px -1305px;
+  background-position: -13px -1411px;
   height: 40px;
   width: 40px;
 }
 
 .VBA40-rockart {
-  background-position: -16px -1345px;
+  background-position: -16px -1451px;
   height: 40px;
   width: 34px;
 }
 
 .VBA40-simpleroots {
-  background-position: -13px -1385px;
+  background-position: -13px -1491px;
   height: 40px;
   width: 40px;
 }
 
 .VBA40-stonecorral {
-  background-position: -13px -1425px;
+  background-position: -13px -1531px;
   height: 40px;
   width: 40px;
 }
 
 .VBA40-switchback {
-  background-position: -10px -1465px;
+  background-position: -10px -1571px;
   height: 40px;
   width: 45px;
 }
 
 .VBA40-trappfamily {
-  background-position: -13px -1505px;
+  background-position: -13px -1611px;
   height: 40px;
   width: 40px;
 }
 
 .VBA40-troutriver {
-  background-position: -15px -1545px;
+  background-position: -13px -1651px;
   height: 40px;
-  width: 35px;
+  width: 40px;
 }
 
 .VBA40-vpb {
-  background-position: -13px -1585px;
+  background-position: -13px -1691px;
   height: 40px;
   width: 40px;
 }
 
 .VBA40-whetstonestation {
-  background-position: -13px -1625px;
+  background-position: -13px -1731px;
   height: 40px;
   width: 40px;
 }
 
 .VBA40-zerogravity {
-  background-position: -11px -1665px;
+  background-position: -11px -1771px;
   height: 40px;
   width: 43px;
 }
@@ -1465,7 +1501,6 @@ input[type="submit"] {
     float: left;
     padding-left: 1.4460031%;
     padding-right: 1.4460031%;
-    min-height: 100px;
   }
 }
 .memberpage-info-details {

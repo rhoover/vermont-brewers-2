@@ -33,6 +33,7 @@ Template Name: Member Page
                     <a href="{{member.facebook}}" class="memberpage-info-social" data-show-social target="_blank"><span class="memberpage-info-social-icon social-facebook"></span></a>
                     <a href="{{member.twitter}}" class="memberpage-info-social" data-show-social target="_blank"><span class="memberpage-info-social-icon social-twitter"></span></a>
                     <a href="{{member.googleplus}}" class="memberpage-info-social" data-show-social target="_blank"><span class="memberpage-info-social-icon social-google"></span></a>
+                    <a href="{{member.instagram}}" class="memberpage-info-social" data-show-social target="_blank"><span class="memberpage-info-social-icon social-instagram"></span></a>
                 </div>
             </div>
 

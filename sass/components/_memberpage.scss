@@ -30,7 +30,7 @@
             }
             @include susy-breakpoint($bp-large,$columns-large) {
                 @include span(3 of 8);
-                min-height: 100px;
+                // min-height: 100px;
             }
         }
         &-details {

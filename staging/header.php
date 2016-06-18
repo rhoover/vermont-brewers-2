@@ -39,15 +39,19 @@
 <!-- Twitter Meta Properties -->
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="Vermont Brewers Association">
+<meta name="twitter:title" content="Supporting Vermont's Craft Brewers Since 1995">
+<meta name="twitter:description" content="The Vermont Brewers Association was founded in 1995 to promote and strengthen the culture of craft brewing in Vermont through marketing, educating and advocating for Vermont made beer.">
+<meta name="twitter:image" content="http://www.vermontbrewers.com/wp-content/themes/vbav2/images/vba-logo-new.png">
 
 <!-- Facebook OpenGraph Meta Properties -->
-<meta property="og:title" content="The Vermont Brewers Association" />
-<meta property="og:type" content="organization"/>
-<meta property="og:url" content="http://www.vermontbrewers.com"/>
-<meta property="og:site_name" content="The Vermont Brewers Association - Small State - Big Beer"/>
-<meta property="og:description" content="Proud To Support Vermont's Craft Brewers"/>
-<meta property="og:email" content="melissa.corbin@vermontbrewers.com"/>
-<meta property="og:phone_number" content="802-310-6942"/>
+<meta property="og:url" content="http://www.vermontbrewers.com">
+<meta property="og:title" content="The Vermont Brewers Association">
+<meta property="og:description" content="The Vermont Brewers Association was founded in 1995 to promote and strengthen the culture of craft brewing in Vermont through marketing, educating and advocating for Vermont made beer.">
+<meta property="og:image" content="http://www.vermontbrewers.com/wp-content/themes/vbav2/images/vba-logo-new-fb.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="The Vermont Brewers Association - Small State - Big Beer">
 
 <!-- icons -->
 <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/favicon.ico">

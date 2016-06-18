@@ -137,7 +137,7 @@
         "facebook":"https://www.facebook.com/dropinbrewing",
         "twitter":"https://twitter.com/#!/dropinbeer",
         "googleplus":"",
-        "instagram":""
+        "instagram":"https://www.instagram.com/dropinbeer"
     },
     {
         "id": 7,
@@ -157,7 +157,7 @@
         "facebook":"https://www.facebook.com/pages/Fiddlehead-Brewing-Company/152040331527610",
         "twitter":"https://twitter.com/fiddleheadbrew",
         "googleplus":"",
-        "instagram":""
+        "instagram":"https://www.instagram.com/FiddleheadBrewing"
     },
     {
         "id": 8,
@@ -277,7 +277,7 @@
         "facebook":"https://www.facebook.com/pages/Long-Trail-Brewing/142163634919",
         "twitter":"https://twitter.com/LongTrailBrwing",
         "googleplus":"",
-        "instagram":""
+        "instagram":"https://www.instagram.com/longtrailbeer"
     },
     {
         "id": 15,
@@ -417,7 +417,7 @@
         "facebook":"https://www.facebook.com/pages/Otter-Creek-Brewery/137425442977971",
         "twitter":"https://twitter.com/OtterCreekBrew",
         "googleplus":"",
-        "instagram":""
+        "instagram":"https://www.instagram.com/ottercreekbeer"
     },
     {
         "id": 22,
@@ -517,7 +517,7 @@
         "facebook":"https://www.facebook.com/VermontPubandBrewery",
         "twitter":"",
         "googleplus":"",
-        "instagram":""
+        "instagram":"https://www.instagram.com/VTPubandBrew/"
     },
     {
         "id": 28,
@@ -537,7 +537,7 @@
         "facebook":"https://www.facebook.com/pages/Zero-Gravity-Craft-Brewery/332441423441087",
         "twitter":"https://twitter.com/zerogravitybeer",
         "googleplus":"",
-        "instagram":""
+        "instagram":"https://www.instagram.com/Zerogravitybeer"
     },
     {
         "name": "Stone Corral Brewery",
@@ -560,18 +560,18 @@
     },
     {
         "name": "First Republic Brewing Company",
-        "address": "Middle Of Town Somewhere",
-        "city": "Fairfax",
+        "address": "39 River Road, Suite 6",
+        "city": "Essex Junction",
         "state": "VT",
-        "zip": "05454",
-        "latitude": 44.6654963,
-        "longitude":  -73.01032,
+        "zip": "05452",
+        "latitude": 44.4837305,
+        "longitude": -73.0844929,
         "vba40": "images/VBA40/firstrepublic.png",
         "vba100": "images/VBA100/firstrepublic.png",
         "vba200": "images/VBA200/firstrepublic.png",
         "selector": "firstrepublic",
         "url":"http://www.1strepublicbrewingco.com/",
-        "phone":"",
+        "phone":"802.857.5318",
         "facebook":"https://www.facebook.com/1stRepublicBrewingCo/timeline",
         "twitter":"",
         "googleplus":"",
@@ -632,7 +632,7 @@
         "facebook":"https://www.facebook.com/FourQuartersBrewing",
         "twitter":"http://www.twitter.com/4quartersbrew",
         "googleplus":"https://plus.google.com/109969977542498061735/about",
-        "instagram":""
+        "instagram":"https://www.instagram.com/4quartersbrew"
     },
     {
         "name": "Queen City Brewing Company",
@@ -647,7 +647,7 @@
         "vba200": "images/VBA200/queencity.png",
         "selector": "queencity",
         "url":"http://queencitybrewery.com/",
-        "phone":"802.735.1288",
+        "phone":"802.540.0280",
         "facebook":"http://www.facebook.com/QueenCityBrewery",
         "twitter":"https://twitter.com/QueenCtyBrewery",
         "googleplus":"",
@@ -746,7 +746,7 @@
         "facebook":"",
         "twitter":"",
         "googleplus":"",
-        "instagram":""
+        "instagram":"https://www.instagram.com/frost.beer.works"
     },
     {
         "name": "J'Ville Brewery",
@@ -766,5 +766,81 @@
         "twitter":"",
         "googleplus":"",
         "instagram":""
+    },
+    {
+        "name": "Goodwater Brewery",
+        "address": "740 Marshall Avenue",
+        "city": "Williston",
+        "state": "VT",
+        "zip": "05495",
+        "latitude": 44.4455598,
+        "longitude":  -73.1266156,
+        "vba40": "images/VBA40/goodwater.png",
+        "vba100": "images/VBA100/goodwater.png",
+        "vba200": "images/VBA200/goodwater.png",
+        "selector": "goodwater",
+        "url":"http://www.goodwaterbreweryvt.com/",
+        "phone":"802.999.7396",
+        "facebook":"https://www.facebook.com/Good-Water-Brewery-353993028073567/",
+        "twitter":"",
+        "googleplus":"",
+        "instagram":"https://www.instagram.com/goodwaterbrewing/"
+    },
+    {
+        "name": "Brewster River Pub and Brewery",
+        "address": "4087 Route 108 South",
+        "city": "Jeffersonville",
+        "state": "VT",
+        "zip": "05464",
+        "latitude": 44.5911324,
+        "longitude":  -72.7933355,
+        "vba40": "images/VBA40/brewsterriver.png",
+        "vba100": "images/VBA100/brewsterriver.png",
+        "vba200": "images/VBA200/brewsterriver.png",
+        "selector": "brewsterriver",
+        "url":"http://www.brewsterriverpubnbrewery.com/",
+        "phone":"802.644.6366",
+        "facebook":"https://www.facebook.com/Brewsterriverpeeps",
+        "twitter":"https://twitter.com/BrewRiverPub",
+        "googleplus":"",
+        "instagram":""
+    },
+    {
+        "name": "Trout River Brewing Company",
+        "address": "100 River Street",
+        "city": "Springfield",
+        "state": "VT",
+        "zip": "05156",
+        "latitude": 43.3015632,
+        "longitude": -72.4867228,
+        "vba40": "images/VBA40/troutriver.png",
+        "vba100": "images/VBA100/troutriver.png",
+        "vba200": "images/VBA200/troutriver.png",
+        "selector": "troutriver",
+        "url":"http://www.troutriverbrewing.com/",
+        "phone":"802.345.2756",
+        "facebook":"https://www.facebook.com/troutriverbrewery",
+        "twitter":"",
+        "googleplus":"https://plus.google.com/+Troutriverbrewingco",
+        "instagram":"https://www.instagram.com/troutriverbrewery/"
+    },
+    {
+        "name": "Foam Brewers",
+        "address": "112 Lake Street",
+        "city": "Burlington",
+        "state": "VT",
+        "zip": "05401",
+        "latitude": 44.4790851,
+        "longitude": -73.2199836,
+        "vba40": "images/VBA40/foambrewers.png",
+        "vba100": "images/VBA100/foambrewers.png",
+        "vba200": "images/VBA200/foambrewers.png",
+        "selector": "foambrewers",
+        "url":"http://www.foambrewers.com/",
+        "phone":"802.399.2511",
+        "facebook":"https://www.facebook.com/FoamBrewers",
+        "twitter":"",
+        "googleplus":"",
+        "instagram":"https://www.instagram.com/foambrewers/"
     }
 ]
