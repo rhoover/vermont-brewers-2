@@ -842,5 +842,43 @@
         "twitter":"",
         "googleplus":"",
         "instagram":"https://www.instagram.com/foambrewers/"
+    },
+    {
+        "name": "Brocklebank Craft Brewing",
+        "address": "357 Dickerman Hill Road",
+        "city": "Tunbridge",
+        "state": "VT",
+        "zip": "05077",
+        "latitude": 43.965748,
+        "longitude": -72.5101787,
+        "vba40": "images/VBA40/brocklebank.png",
+        "vba100": "images/VBA100/brocklebank.png",
+        "vba200": "images/VBA200/brocklebank.png",
+        "selector": "brocklebank",
+        "url":"http://www.brocklebankvt.com/",
+        "phone":"802.685.4838",
+        "facebook":"https://www.facebook.com/brocklebankvt/",
+        "twitter":"",
+        "googleplus":"",
+        "instagram":""
+    },
+    {
+        "name": "River Roost Brewery",
+        "address": "230 South Main Street",
+        "city": "White River Junstion",
+        "state": "VT",
+        "zip": "05001",
+        "latitude": 43.6454244,
+        "longitude": -72.318524,
+        "vba40": "images/VBA40/riverroost.png",
+        "vba100": "images/VBA100/riverroost.png",
+        "vba200": "images/VBA200/riverroost.png",
+        "selector": "riverroost",
+        "url":"http://www.riverroostbrewery.com/",
+        "phone":"",
+        "facebook":"https://www.facebook.com/River-Roost-Brewery-820676564698012/",
+        "twitter":"https://twitter.com/RiverRoostVT",
+        "googleplus":"",
+        "instagram":""
     }
 ]
