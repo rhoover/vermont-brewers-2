@@ -70,3 +70,21 @@
         }
     }
 }
+
+.tickets {
+    @extend .frontpage;
+    padding: 1em 0 0 0;
+    & > * {
+        text-align: center;
+        // display: inline-block;
+        // float: left;
+    }
+    & > img {
+        display: block;
+        margin: 0 auto;
+        width: 100px;
+    }
+    @include susy-breakpoint($bp-medium, $columns-medium) {
+        padding: 2em 0 0 0;
+    }
+}

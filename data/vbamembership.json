@@ -635,7 +635,7 @@
         "instagram":"https://www.instagram.com/4quartersbrew"
     },
     {
-        "name": "Queen City Brewing Company",
+        "name": "Queen City Brewery",
         "address": "703B Pine Street",
         "city": "Burlington",
         "state": "VT",
@@ -865,7 +865,7 @@
     {
         "name": "River Roost Brewery",
         "address": "230 South Main Street",
-        "city": "White River Junstion",
+        "city": "White River Junction",
         "state": "VT",
         "zip": "05001",
         "latitude": 43.6454244,
@@ -880,5 +880,24 @@
         "twitter":"https://twitter.com/RiverRoostVT",
         "googleplus":"",
         "instagram":""
+    },
+    {
+        "name": "House of Fermentology",
+        "address": "777 Pine Street",
+        "city": "Burlington",
+        "state": "VT",
+        "zip": "05401",
+        "latitude": 44.4579589,
+        "longitude": -73.2169994,
+        "vba40": "images/VBA40/housefermentology.png",
+        "vba100": "images/VBA100/housefermentology.png",
+        "vba200": "images/VBA200/housefermentology.png",
+        "selector": "housefermentology",
+        "url":"http://www.houseoffermentology.com/",
+        "phone":"802.863.4938",
+        "facebook":"https://www.facebook.com/House-of-Fermentology-498323433676425/",
+        "twitter":"",
+        "googleplus":"",
+        "instagram":"https://www.instagram.com/houseoffermentology/"
     }
 ]
