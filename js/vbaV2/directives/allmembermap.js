@@ -18,7 +18,7 @@ angular.module('vbaV2App')
                         infoContent = '<p>'+aml.name+'</p>'+
                         '<p>'+aml.address+'</p>'+
                         '<p>'+aml.city+', '+aml.state+'</p>' +
-                         '<a href="http://vermontbrewers.com/'+aml.selector+' ">Go To Listing</a>';
+                         '<a href="http://www.vermontbrewers.com/'+aml.selector+' ">Go To Listing</a>';
 
                         infowindow = googleMap.infoWindowCreator(infoContent);
 
